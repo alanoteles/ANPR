@@ -1,0 +1,7 @@
+mod_mainmenu: Copyright 2005-2008, Joomla! Project (www.joomla.org)
+Superfish: Copyright 2008, Joel Birch (http://users.tpg.com.au/j_birch/plugins/superfish)
+Supersubs: Copyright 2008, Joel Birch
+$.event.special.hover: Copyright 2008, Three Dub Media (www.threedubmedia.com)
+bgIframe: Copyright 2006, Brandon Aaron (www.brandonaaron.net)
+jQuery: Copyright 2008, John Resig (www.jquery.com)
+superfish_width_mod: Copyright 2009, Cy Morris (www.cymorris.com)

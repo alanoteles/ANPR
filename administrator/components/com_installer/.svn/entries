@@ -1,0 +1,77 @@
+10
+
+dir
+0
+http://alano@192.168.0.106/svn/anpr/administrator/components/com_installer
+http://alano@192.168.0.106/svn/anpr
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dca0dac9-5aa0-49d5-acc5-cec72a762977
+
+models
+dir
+
+
+
+add
+
+helper.php
+file
+
+
+
+add
+
+controller.php
+file
+
+
+
+add
+
+admin.installer.php
+file
+
+
+
+add
+
+index.html
+file
+
+
+
+add
+
+installer.xml
+file
+
+
+
+add
+
+views
+dir
+
+
+
+add
+

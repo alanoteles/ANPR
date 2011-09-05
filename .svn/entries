@@ -1,0 +1,224 @@
+10
+
+dir
+0
+http://alano@192.168.0.106/svn/anpr
+http://alano@192.168.0.106/svn/anpr
+
+
+
+2011-08-05T18:29:00.057565Z
+0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dca0dac9-5aa0-49d5-acc5-cec72a762977
+
+index2.php
+file
+
+
+
+add
+
+media
+dir
+
+
+
+add
+
+administrator
+dir
+
+
+
+add
+
+plugins
+dir
+
+
+
+add
+
+CREDITS.php
+file
+
+
+
+add
+
+language
+dir
+
+
+
+add
+
+components
+dir
+
+
+
+add
+
+nbproject
+dir
+
+
+
+add
+
+robots.txt
+file
+
+
+
+add
+
+teste.html
+file
+
+
+
+add
+
+LICENSES.php
+file
+
+
+
+add
+
+INSTALL.php
+file
+
+
+
+add
+
+configuration.php
+file
+
+
+
+add
+
+index.php
+file
+
+
+
+add
+
+configuration.php-dist
+file
+
+
+
+add
+
+COPYRIGHT.php
+file
+
+
+
+add
+
+templates
+dir
+
+
+
+add
+
+tmp
+dir
+
+
+
+add
+
+cache
+dir
+
+
+
+add
+
+logs
+dir
+
+
+
+add
+
+images
+dir
+
+
+
+add
+
+xmlrpc
+dir
+
+
+
+add
+
+includes
+dir
+
+
+
+add
+
+LICENSE.php
+file
+
+
+
+add
+
+modules
+dir
+
+
+
+add
+
+htaccess.txt
+file
+
+
+
+add
+
+libraries
+dir
+
+
+
+add
+
+CHANGELOG.php
+file
+
+
+
+add
+

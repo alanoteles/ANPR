@@ -1,0 +1,12 @@
+#youtubeContainer, .storyBlock {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#youtubeContainer a img {
+	width:120px;
+	height: 75px;
+}
+#nav_new a img {
+	border: none;
+}

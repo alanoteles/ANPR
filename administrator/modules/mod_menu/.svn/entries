@@ -1,0 +1,70 @@
+10
+
+dir
+0
+http://alano@192.168.0.106/svn/anpr/administrator/modules/mod_menu
+http://alano@192.168.0.106/svn/anpr
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dca0dac9-5aa0-49d5-acc5-cec72a762977
+
+mod_menu.xml
+file
+
+
+
+add
+
+helper.php
+file
+
+
+
+add
+
+mod_menu.php
+file
+
+
+
+add
+
+index.html
+file
+
+
+
+add
+
+menu.php
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+

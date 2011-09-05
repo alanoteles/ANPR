@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="module" method="upgrade">
+	<name>ARI Ext Menu</name>
+	<author>ARI Soft</author>
+	<creationDate>July 2011</creationDate>
+	<copyright>ARI Soft</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@ari-soft.com</authorEmail>
+	<authorUrl>www.ari-soft.com</authorUrl>
+	<version>2.0.8</version>
+	<description>ARI_EXT_MENU_MODULE</description>
+	<files>
+		<filename module="mod_ariextmenu">mod_ariextmenu.php</filename>
+		<filename>index.html</filename>
+		<folder>mod_ariextmenu/</folder>
+		<folder>tmpl/</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_ariextmenu.ini</language>
+		<language tag="es-ES">language/es-ES/es-ES.mod_ariextmenu.ini</language>
+		<language tag="sk-SK">language/sk-SK/sk-SK.mod_ariextmenu.ini</language>
+	</languages>
+	<params addpath="/modules/mod_ariextmenu/mod_ariextmenu/elements">
+		<param name="" type="header" default="AEM_LABEL_MENUPARAM" label="" description="" />
+		<param name="menutype" type="mos_menu" default="mainmenu" label="AEM_PARAM_MENUTYPE_LABEL" description="AEM_PARAM_MENUTYPE_DESCR" />
+		<param name="direction" type="list" default="horizontal" label="AEM_MENUDIR_LABEL" description="AEM_MENUDIR_DESCR">
+			<option value="horizontal">AEM_MENUDIR_OPT_HORIZONTAL</option>
+			<option value="vertical">AEM_MENUDIR_OPT_VERTICAL</option>
+		</param>
+		<param name="startLevel" type="text" default="0" label="AEM_PARAM_STARTLEVEL_LABEL" description="AEM_PARAM_STARTLEVEL_DESCR" />
+		<param name="endLevel" type="text" default="-1" label="AEM_PARAM_ENDLEVEL_LABEL" description="AEM_PARAM_ENDLEVEL_DESCR" />
+		<param name="onlyActiveItems" type="list" default="0" label="AEM_PARAM_ACTIVEITEMS_LABEL" description="AEM_PARAM_ACTIVEITEMS_DESCR">
+			<option value="0">AEM_NO</option>
+			<option value="1">AEM_YES</option>
+		</param>
+		<param name="highlightCurrent" type="list" default="1" label="AEM_PARAM_HLCURRENTITEM_LABEL" description="AEM_PARAM_HLCURRENTITEM_DESCR">
+			<option value="0">AEM_NO</option>
+			<option value="1">AEM_YES</option>
+		</param>
+		<param name="" type="header" default="AEM_LABEL_SYSPARAM" label="" description="" />
+		<param name="moduleclass_sfx" type="text" default="" label="AEM_PARAM_CLASSSUFFIX_LABEL" description="PARAMMODULECLASSSUFFIX" />
+		<param name="loadExtJS" type="list" default="1" label="AEM_PARAM_LOADEXTJS_LABEL" description="AEM_PARAM_LOADEXTJS_DESCR">
+			<option value="0">AEM_NO</option>
+			<option value="1">AEM_YES</option> 
+		</param>
+  		<param name="loadMethod" type="list" default="ready" label="AEM_PARAM_LOADMETHOD_LABEL" description="AEM_PARAM_LOADMETHOD_DESCR">
+  			<option value="ready">AEM_DOMREADY</option> 
+  			<option value="load">AEM_ONLOAD</option> 
+  		</param>
+  		<param name="uniqId" type="list" default="0" label="AEM_PARAM_UNIQID_LABEL" description="AEM_PARAM_UNIQID_DESCR">
+			<option value="0">AEM_NO</option>
+			<option value="1">AEM_YES</option>
+		</param>
+  		<param name="" type="header" default="AEM_LABEL_WIDGETPARAM" label="" description="" />
+  		<param name="autoWidth" type="list" default="1" label="AEM_PARAM_AUTOWIDTH_LABEL" description="AEM_PARAM_AUTOWIDTH_DESCR">
+			<option value="0">AEM_NO</option>
+			<option value="1">AEM_YES</option>
+		</param>	
+  		<param name="animate" type="list" default="1" label="AEM_PARAM_ANIMATE_LABEL" description="AEM_PARAM_ANIMATE_DESCR">
+			<option value="0">AEM_NO</option>
+			<option value="1">AEM_YES</option>
+		</param>
+		<param name="delay" type="text" default="0.2" size="10" label="AEM_PARAM_DELAY_LABEL" description="AEM_PARAM_DELAY_DESCR" />
+		<param name="transitionType" type="list" default="fade" label="AEM_PARAM_TTYPE_LABEL" description="AEM_PARAM_TTYPE_DESCR">
+			<option value="fade">AEM_TTYPE_OPT_FADE</option>
+			<option value="slide">AEM_TTYPE_OPT_SLIDE</option>
+		</param>
+		<param name="transitionDuration" type="text" default="0.2" size="10" label="AEM_PARAM_DURATION_LABEL" description="AEM_PARAM_DURATION_DESCR" />
+		<param name="" type="header" default="AEM_LABEL_CSSPARAM" label="" description="" />
+		<param name="zIndex" type="text" default="" size="10" label="AEM_PARAM_ZINDEX_LABEL" description="AEM_PARAM_ZINDEX_DESCR" />
+		<param name="" type="header" default="AEM_LABEL_MAINMENUPARAM" label="" description="" bgcolor="#A0A0A0" />
+		<param name="bgColor" type="color" default="" size="10" label="AEM_BGCOLOR_LABEL" description="AEM_BGCOLOR_DESCR" />
+		<param name="textColor" type="color" default="" size="10" label="AEM_TEXTCOLOR_LABEL" description="AEM_TEXTCOLOR_DESCR" />
+		<param name="bgHoverColor" type="color" default="" size="10" label="AEM_BGHOVERCOLOR_LABEL" description="AEM_BGHOVERCOLOR_DESCR" />
+		<param name="textHoverColor" type="color" default="" size="10" label="AEM_TEXTHOVERCOLOR_LABEL" description="AEM_TEXTHOVERCOLOR_DESCR" />
+		<param name="bgCurrentColor" type="color" default="" size="10" label="AEM_BGCURRENTCOLOR_LABEL" description="AEM_BGCURRENTCOLOR_DESCR" />
+		<param name="textCurrentColor" type="color" default="" size="10" label="AEM_TEXTCURRENTCOLOR_LABEL" description="AEM_TEXTCURRENTCOLOR_DESCR" />
+		<param name="fontSize" type="text" default="12px" size="10" label="AEM_FONTSIZE_LABEL" description="AEM_FONTSIZE_DESCR" />
+		<param name="fontWeight" type="list" default="normal" label="AEM_FONTWEIGHT_LABEL" description="AEM_FONTWEIGHT_DESCR">
+			<option value="normal">AEM_FONTWEIGHT_OPT_NORMAL</option>
+			<option value="bold">AEM_FONTWEIGHT_OPT_BOLD</option>
+			<option value="bolder">AEM_FONTWEIGHT_OPT_BOLDER</option>
+			<option value="lighter">AEM_FONTWEIGHT_OPT_LIGHTER</option>
+		</param>
+		<param name="textAlign" type="list" default="left" label="AEM_TEXTALIGN_LABEL" description="AEM_TEXTALIGN_DESCR">
+			<option value="left">AEM_ALIGN_OPT_LEFT</option>
+			<option value="right">AEM_ALIGN_OPT_RIGHT</option>
+			<option value="center">AEM_ALIGN_OPT_CENTER</option>
+			<option value="justify">AEM_ALIGN_OPT_JUSTIFY</option>
+		</param>
+		<param name="textTransform" type="list" default="none" label="AEM_TEXTTRANSFORM_LABEL" description="AEM_TEXTTRANSFORM_DESCR">
+			<option value="none">AEM_TEXTTRANSFORM_OPT_NONE</option>
+			<option value="capitalize">AEM_TEXTTRANSFORM_OPT_CAPITALIZE</option>
+			<option value="uppercase">AEM_TEXTTRANSFORM_OPT_UPPERCASE</option>
+			<option value="lowercase">AEM_TEXTTRANSFORM_OPT_LOWERCASE</option>
+		</param>
+		<param name="" type="header" default="AEM_LABEL_SUBMENUPARAM" label="" description="" bgcolor="#A0A0A0" />
+		<param name="inheritMain" type="list" default="1" label="AEM_PARAM_INHERITMAIN_LABEL" description="AEM_PARAM_INHERITMAIN_DESCR">
+			<option value="0">AEM_NO</option>
+			<option value="1">AEM_YES</option>
+		</param>
+		<param name="sub_bgColor" type="color" default="" size="10" label="AEM_BGCOLOR_LABEL" description="AEM_BGCOLOR_DESCR" />
+		<param name="sub_textColor" type="color" default="" size="10" label="AEM_TEXTCOLOR_LABEL" description="AEM_TEXTCOLOR_DESCR" />
+		<param name="sub_bgHoverColor" type="color" default="" size="10" label="AEM_BGHOVERCOLOR_LABEL" description="AEM_BGHOVERCOLOR_DESCR" />
+		<param name="sub_textHoverColor" type="color" default="" size="10" label="AEM_TEXTHOVERCOLOR_LABEL" description="AEM_TEXTHOVERCOLOR_DESCR" />
+		<param name="sub_bgCurrentColor" type="color" default="" size="10" label="AEM_BGCURRENTCOLOR_LABEL" description="AEM_BGCURRENTCOLOR_DESCR" />
+		<param name="sub_textCurrentColor" type="color" default="" size="10" label="AEM_TEXTCURRENTCOLOR_LABEL" description="AEM_TEXTCURRENTCOLOR_DESCR" />
+		<param name="sub_fontSize" type="text" default="12px" size="10" label="AEM_FONTSIZE_LABEL" description="AEM_FONTSIZE_DESCR" />
+		<param name="sub_fontWeight" type="list" default="normal" label="AEM_FONTWEIGHT_LABEL" description="AEM_FONTWEIGHT_DESCR">
+			<option value="normal">AEM_FONTWEIGHT_OPT_NORMAL</option>
+			<option value="bold">AEM_FONTWEIGHT_OPT_BOLD</option>
+			<option value="bolder">AEM_FONTWEIGHT_OPT_BOLDER</option>
+			<option value="lighter">AEM_FONTWEIGHT_OPT_LIGHTER</option>
+		</param>
+		<param name="sub_textAlign" type="list" default="left" label="AEM_TEXTALIGN_LABEL" description="AEM_TEXTALIGN_DESCR">
+			<option value="left">AEM_ALIGN_OPT_LEFT</option>
+			<option value="right">AEM_ALIGN_OPT_RIGHT</option>
+			<option value="center">AEM_ALIGN_OPT_CENTER</option>
+			<option value="justify">AEM_ALIGN_OPT_JUSTIFY</option>
+		</param>
+		<param name="sub_textTransform" type="list" default="none" label="AEM_TEXTTRANSFORM_LABEL" description="AEM_TEXTTRANSFORM_DESCR">
+			<option value="none">AEM_TEXTTRANSFORM_OPT_NONE</option>
+			<option value="capitalize">AEM_TEXTTRANSFORM_OPT_CAPITALIZE</option>
+			<option value="uppercase">AEM_TEXTTRANSFORM_OPT_UPPERCASE</option>
+			<option value="lowercase">AEM_TEXTTRANSFORM_OPT_LOWERCASE</option>
+		</param>
+
+		<param name="style" type="textarea" rows="10" cols="50" label="AEM_STYLE_LABEL" description="AEM_STYLE_DESCR" />
+	</params>
+</install>

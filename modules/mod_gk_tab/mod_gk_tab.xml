@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+        <name>Gavick Tab GK1</name>
+        <creationDate>31/01/2010</creationDate>
+        <author>Gavick.com</author>
+        <copyright>(C) 2009-2010 Gavick.com</copyright>
+        <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+        <authorEmail>info@gavick.com</authorEmail>
+        <authorUrl>www.gavick.com</authorUrl>
+        <version>1.1.0</version>
+        <description>INSTALLED</description>
+        
+        <languages>
+   			<language tag="en-GB">language/en-GB.mod_gk_tab.ini</language>
+		</languages>  
+		
+        <files>
+                <filename module="mod_gk_tab">mod_gk_tab.php</filename>
+                <filename module="mod_gk_tab">helper.php</filename>
+				<filename module="mod_gk_tab">index.html</filename>
+
+                <filename module="mod_gk_tab">tmpl/default.php</filename>
+                <filename module="mod_gk_tab">tmpl/article.php</filename>
+                <filename module="mod_gk_tab">tmpl/content.php</filename>
+                <filename module="mod_gk_tab">tmpl/xhtml.php</filename>
+                <filename module="mod_gk_tab">tmpl/module.php</filename>
+                <filename module="mod_gk_tab">tmpl/index.html</filename>
+				
+				<filename module="mod_gk_tab">styles/accordion/index.html</filename>
+                <filename module="mod_gk_tab">styles/accordion/style1.css</filename>
+                <filename module="mod_gk_tab">styles/accordion/style2.css</filename>
+                <filename module="mod_gk_tab">styles/accordion/style3.css</filename>
+                <filename module="mod_gk_tab">styles/horizontal/index.html</filename>
+				<filename module="mod_gk_tab">styles/horizontal/style1.css</filename>
+				<filename module="mod_gk_tab">styles/horizontal/style2.css</filename>
+				<filename module="mod_gk_tab">styles/horizontal/style3.css</filename>
+				<filename module="mod_gk_tab">styles/horizontal/style4.css</filename>
+				<filename module="mod_gk_tab">styles/vertical/index.html</filename>
+				<filename module="mod_gk_tab">styles/vertical/style1.css</filename>
+				<filename module="mod_gk_tab">styles/vertical/style2.css</filename>
+				<filename module="mod_gk_tab">styles/vertical/style3.css</filename>
+                
+				<filename module="mod_gk_tab">scripts/index.html</filename>
+				<filename module="mod_gk_tab">scripts/mootools.js</filename>
+                <filename module="mod_gk_tab">scripts/engine.js</filename>
+                <filename module="mod_gk_tab">scripts/engine_compress.js</filename>
+                <filename module="mod_gk_tab">scripts/importer.php</filename>
+                <filename module="mod_gk_tab">scripts/engine_accordion.js</filename>
+                <filename module="mod_gk_tab">scripts/engine_accordion_compress.js</filename>
+
+				<filename module="mod_gk_tab">gk_classes/index.html</filename>
+				<filename module="mod_gk_tab">gk_classes/date.class.php</filename>
+
+				<filename module="mod_gk_tab">images/accordion/index.html</filename>
+				<filename module="mod_gk_tab">images/accordion/style1/index.html</filename>
+				<filename module="mod_gk_tab">images/accordion/style1/h3.png</filename>
+				<filename module="mod_gk_tab">images/accordion/style1/h3_hover.png</filename>
+				<filename module="mod_gk_tab">images/accordion/style2/index.html</filename>
+				<filename module="mod_gk_tab">images/accordion/style2/h3.png</filename>
+				<filename module="mod_gk_tab">images/accordion/style2/h3_hover.png</filename>
+				<filename module="mod_gk_tab">images/accordion/style3/index.html</filename>
+				<filename module="mod_gk_tab">images/accordion/style3/h3.png</filename>
+				<filename module="mod_gk_tab">images/accordion/style3/h3_hover.png</filename>
+				
+				<filename module="mod_gk_tab">images/horizontal/index.html</filename>
+				<filename module="mod_gk_tab">images/horizontal/style1/index.html</filename>
+				<filename module="mod_gk_tab">images/horizontal/style1/b_next.png</filename>
+				<filename module="mod_gk_tab">images/horizontal/style1/b_prev.png</filename>
+				<filename module="mod_gk_tab">images/horizontal/style1/bg_content.png</filename>
+				<filename module="mod_gk_tab">images/horizontal/style1/bg_content-bottom.png</filename>
+				<filename module="mod_gk_tab">images/horizontal/style1/bg_tab.png</filename>
+				<filename module="mod_gk_tab">images/horizontal/style1/bg_tab-active.png</filename>
+				<filename module="mod_gk_tab">images/horizontal/style2/index.html</filename>
+				<filename module="mod_gk_tab">images/horizontal/style2/b_next.png</filename>
+				<filename module="mod_gk_tab">images/horizontal/style2/b_prev.png</filename>
+				<filename module="mod_gk_tab">images/horizontal/style2/bg_bullet.png</filename>
+				<filename module="mod_gk_tab">images/horizontal/style2/bg_tab-l.png</filename>
+				<filename module="mod_gk_tab">images/horizontal/style2/bg_tab-r.png</filename>
+				<filename module="mod_gk_tab">images/horizontal/style3/index.html</filename>
+				<filename module="mod_gk_tab">images/horizontal/style3/b_next.png</filename>
+				<filename module="mod_gk_tab">images/horizontal/style3/b_prev.png</filename>
+				<filename module="mod_gk_tab">images/horizontal/style3/bg_tab.png</filename>
+				<filename module="mod_gk_tab">images/horizontal/style3/bg_tab-active.png</filename>
+				<filename module="mod_gk_tab">images/horizontal/style4/index.html</filename>
+				<filename module="mod_gk_tab">images/horizontal/style4/b_next.png</filename>
+				<filename module="mod_gk_tab">images/horizontal/style4/b_prev.png</filename>
+				<filename module="mod_gk_tab">images/horizontal/style4/bg_ul-l.png</filename>
+				<filename module="mod_gk_tab">images/horizontal/style4/bg_ul-r.png</filename>
+
+				<filename module="mod_gk_tab">images/vertical/index.html</filename>
+				<filename module="mod_gk_tab">images/vertical/style1/index.html</filename>
+				<filename module="mod_gk_tab">images/vertical/style1/b_next.png</filename>
+				<filename module="mod_gk_tab">images/vertical/style1/b_prev.png</filename>
+				<filename module="mod_gk_tab">images/vertical/style1/bg_bullet.png</filename>
+				<filename module="mod_gk_tab">images/vertical/style1/bg_mod.png</filename>
+				<filename module="mod_gk_tab">images/vertical/style1/bg_tab.png</filename>
+				<filename module="mod_gk_tab">images/vertical/style1/bg_tab-active.png</filename>
+				<filename module="mod_gk_tab">images/vertical/style2/index.html</filename>
+				<filename module="mod_gk_tab">images/vertical/style2/b_next.png</filename>
+				<filename module="mod_gk_tab">images/vertical/style2/b_prev.png</filename>
+				<filename module="mod_gk_tab">images/vertical/style2/bg_mod.png</filename>
+				<filename module="mod_gk_tab">images/vertical/style2/bg_tab-active.png</filename>
+				<filename module="mod_gk_tab">images/vertical/style2/bg_ul.png</filename>
+				<filename module="mod_gk_tab">images/vertical/style3/index.html</filename>
+				<filename module="mod_gk_tab">images/vertical/style3/b_next.png</filename>
+				<filename module="mod_gk_tab">images/vertical/style3/b_prev.png</filename>
+				<filename module="mod_gk_tab">images/vertical/style3/bg_mod.png</filename>
+				<filename module="mod_gk_tab">images/vertical/style3/bg_tab.png</filename>
+				<filename module="mod_gk_tab">images/vertical/style3/bg_tab-active.png</filename>
+				<filename module="mod_gk_tab">images/vertical/style3/bg_ul.png</filename>
+        </files>
+        
+		<params>
+                
+				<param name="@spacer" type="spacer" default="" label="" description="" />
+                
+				<param name="moduleclass_sfx" type="text" default="" label="MODULECLASSSUFFIX" description="MODULECLASSSUFFIX_DESC" />
+                
+				<param name="module_id" type="text" default="tabmix1" label="MODID" description="MODID_DESC" />
+                
+				<param name="moduleHeight" type="text" default="100px" size="5" label="MODHEIGHT" description="MODHEIGHT_DESC"/>
+                
+				<param name="moduleWidth" type="text" default="0" size="5" label="MODWIDTH" description="MODWIDTH_DESC"/>
+                
+				<param name="@spacer" type="spacer" default=" " label=" " description=" " />
+                
+                <param name="tabsGroupID" type="sql" default="" label="GROUPID" description="GROUPID_DESC" query="SELECT id AS value, name AS tabsGroupID FROM #__gk3_tabs_manager_groups" />
+                
+                <param name="news_content_header_pos" type="list" default="1" label="HEAD_POS" description="">
+                        <option value="0">DISABLED</option>
+                        <option value="1">LEFT</option>
+                        <option value="2">RIGHT</option>
+                        <option value="3">CENTER</option>
+                </param>
+                
+                <param name="news_content_image_pos" type="list" default="1" label="IMAGE_POS" description="">
+                        <option value="0">DISABLED</option>
+                        <option value="1">LEFT</option>
+                        <option value="2">RIGHT</option>
+                        <option value="3">CENTER</option>
+                </param>
+                
+                <param name="news_content_text_pos" type="list" default="1" label="TEXT_POS" description="">
+                        <option value="0">DISABLED</option>
+                        <option value="1">LEFT</option>
+                        <option value="2">RIGHT</option>
+                        <option value="3">CENTER</option>
+                        <option value="4">JUSTIFY</option>
+                </param>
+                
+                <param name="news_content_info_pos" type="list" default="1" label="INFO_POS" description="">
+                        <option value="0">DISABLED</option>
+                        <option value="1">LEFT</option>
+                        <option value="2">RIGHT</option>
+                        <option value="3">CENTER</option>
+                </param>
+                
+                <param name="news_content_readmore_pos" type="list" default="2" label="MORE_POS" description="">
+                        <option value="0">DISABLED</option>
+                        <option value="1">LEFT</option>
+                        <option value="2">RIGHT</option>
+                        <option value="3">CENTER</option>
+                        <option value="4">AFTER</option>
+                </param>
+                
+                <param name="news_readmore_text" type="text" default="READMORE" size="20" label="READMORE_DESC" description=""/>
+                
+                <param name="news_header_link" type="radio" default="1" label="HEAD_LINK" description="">
+                        <option value="0">DISABLED</option>
+                        <option value="1">ENABLED</option>
+                </param>
+                
+                <param name="news_image_link" type="radio" default="1" label="IMAGE_LINK" description="">
+                        <option value="0">DISABLED</option>
+                        <option value="1">ENABLED</option>
+                </param>
+                
+                <param name="news_text_link" type="radio" default="0" label="TEXT_LINK" description="">
+                        <option value="0">DISABLED</option>
+                        <option value="1">ENABLED</option>
+                </param>
+                
+                <param name="news_author" type="radio" default="1" label="AUTHOR" description="">
+                        <option value="0">DISABLED</option>
+                        <option value="1">ENABLED</option>
+                </param>
+                
+                <param name="news_cats" type="radio" default="1" label="NEWS_CATEGORIES" description="">
+                        <option value="0">DISABLED</option>
+                        <option value="1">ENABLED</option>
+                </param>
+                
+                <param name="news_date" type="radio" default="1" label="NEWS_DATE" description="">
+                        <option value="0">DISABLED</option>
+                        <option value="1">ENABLED</option>
+                </param>
+                
+                <param name="news_header_order" type="radio" default="1" label="HEAD_ORDER" description="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                </param>
+                
+                <param name="news_image_order" type="radio" default="2" label="IMAGE_ORDER" description="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                </param>
+                
+                <param name="news_text_order" type="radio" default="3" label="TEXT_ORDER" description="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                </param>
+                
+                <param name="news_info_order" type="radio" default="4" label="INFO_ORDER" description="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                </param>
+                
+                <param name="news_limit_type" type="list" default="0" label="LIMITTYPE" description="">
+                        <option value="0">WORDS</option>
+                        <option value="1">CHARS</option>
+                </param>
+                
+                <param name="news_limit" type="text" default="30" size="5" label="MAX_AMOUNT" description=""/>
+                
+                <param name="clean_xhtml" type="radio" default="1" label="CLEANXHTML" description="CLEANXHTML_DESC">
+                        <option value="0">DISABLED</option>
+                        <option value="1">ENABLED</option>
+                </param>
+                
+                <param name="news_content_timezone" type="timezones" default="0" label="TIMEZONE" description="TIMEZONE_DESC"/>
+
+        <param type="spacer" />
+                                
+				<param name="img_height" type="text" default="0" size="5" label="IMAGE_H" description="IMAGE_H_DESC"/>
+				
+                <param name="img_width" type="text" default="0" size="5" label="IMAGE_W" description="IMAGE_W_DESC"/>
+                
+				<param name="date_format" type="text" default="D, d M Y" size="10" label="DATE_FORMAT" description="DATE_FORMAT_DESC"/>   
+				   
+				<param name="username" type="list" default="0" label="AUTHORNAME" description="">
+                        <option value="0">NAME</option>
+                        <option value="1">ALIAS</option>
+                </param>   
+                
+                
+				<param name="@spacer" type="spacer" default=" " label=" " description=" " />
+                
+				<param name="activator" type="radio" default="click" label="ACTIV" description="ACTIV_DESC">
+                        <option value="click">CLICK</option>
+                        <option value="mouseover">MOUSEOVER</option>
+                </param>
+                
+                <param name="animation" type="radio" default="0" label="AUTOANIM" description="AUTOANIM_DESC">
+                        <option value="1">ENABLED</option>
+                        <option value="0">DISABLED</option>
+                </param>
+                
+				<param name="animationType" type="radio" default="1" label="ANIMTYPE" description="ANIMTYPE_DESC">
+                        <option value="1">AT1</option>
+                        <option value="2">AT2</option>
+                </param>
+                
+				<param name="animationSpeed" type="text" default="1000" size="20" label="ANIMSPEED" description="ANIMSPEED_DESC"/>
+                
+				<param name="animationInterval" type="text" default="5000" size="20" label="ANIMINT" description="ANIMINT_DESC"/>
+                
+				<param name="animationFun" type="list" default="linear" label="ANIMFUN" description="ANIMFUN_DESC">
+                        <option value="Fx.Transitions.linear">linear</option>
+                        <option value="Fx.Transitions.Quad.easeIn">Quad.easeIn</option>
+                        <option value="Fx.Transitions.Quad.easeOut">Quad.easeOut</option>
+                        <option value="Fx.Transitions.Quad.easeInOut">Quad.easeInOut</option>
+                        <option value="Fx.Transitions.Cubic.easeIn">Cubic.easeIn</option>
+                        <option value="Fx.Transitions.Cubic.easeOut">Cubic.easeOut</option>
+                        <option value="Fx.Transitions.Cubic.easeInOut">Cubic.easeInOut</option>
+                        <option value="Fx.Transitions.Quart.easeIn">Quart.easeIn</option>
+                        <option value="Fx.Transitions.Quart.easeOut">Quart.easeOut</option>
+                        <option value="Fx.Transitions.Quart.easeInOut">Quart.easeInOut</option>
+                        <option value="Fx.Transitions.Quint.easeIn">Quint.easeIn</option>
+                        <option value="Fx.Transitions.Quint.easeOut">Quint.easeOut</option>
+                        <option value="Fx.Transitions.Quint.easeInOut">Quint.easeInOut</option>
+                        <option value="Fx.Transitions.Pow.easeIn">Pow.easeIn</option>
+                        <option value="Fx.Transitions.Pow.easeOut">Pow.easeOut</option>
+                        <option value="Fx.Transitions.Pow.easeInOut">Pow.easeInOut</option>
+                        <option value="Fx.Transitions.Expo.easeIn">Expo.easeIn</option>
+                        <option value="Fx.Transitions.Expo.easeOut">Expo.easeOut</option>
+                        <option value="Fx.Transitions.Expo.easeInOut">Expo.easeInOut</option>
+                        <option value="Fx.Transitions.Circ.easeIn">Circ.easeIn</option>
+                        <option value="Fx.Transitions.Circ.easeOut">Circ.easeOut</option>
+                        <option value="Fx.Transitions.Circ.easeInOut">Circ.easeInOut</option>
+                        <option value="Fx.Transitions.Sine.easeIn">Sine.easeIn</option>
+                        <option value="Fx.Transitions.Sine.easeOut">Sine.easeOut</option>
+                        <option value="Fx.Transitions.Sine.easeInOut">Sine.easeInOut</option>
+                        <option value="Fx.Transitions.Back.easeIn">Back.easeIn</option>
+                        <option value="Fx.Transitions.Back.easeOut">Back.easeOut</option>
+                        <option value="Fx.Transitions.Back.easeInOut">Back.easeInOut</option>
+                        <option value="Fx.Transitions.Bounce.easeIn">Bounce.easeIn</option>
+                        <option value="Fx.Transitions.Bounce.easeOut">Bounce.easeOut</option>
+                        <option value="Fx.Transitions.Bounce.easeInOut">Bounce.easeInOut</option>
+                        <option value="Fx.Transitions.Elastic.easeIn">Elastic.easeIn</option>
+                        <option value="Fx.Transitions.Elastic.easeOut">Elastic.easeOut</option>
+                        <option value="Fx.Transitions.Elastic.easeInOut">Elastic.easeInOut</option>
+                </param>
+                
+				<param name="@spacer" type="spacer" default=" " label=" " description=" " />
+                
+				<param name="buttons" type="radio" default="1" label="BUTTONS" description="BUTTONS_DESC">
+                        <option value="0">DISABLED</option>
+                        <option value="1">ENABLED</option>
+                </param>
+                
+				<param name="styleCSS" type="list" default="style1" label="STYLE" description="STYLE_DESC">
+                        <option value="style1">S1</option>
+                        <option value="style2">S2</option>
+                        <option value="style3">S3</option>
+                        <option value="style4">S4</option>
+                        <option value="own">OWN</option>
+                </param>
+                
+				<param name="styleType" type="radio" default="0" label="STYLET" description="STYLET_DESC">
+                        <option value="0">ST1</option>
+                        <option value="1">ST2</option>
+                        <option value="2">ST3</option>
+                </param>
+                
+				<param name="styleFile" type="text" default="" size="20" label="STYLEFILE" description="STYLEFILE_DESC" />
+				
+				<param name="styleSuffix" type="text" default="" size="20" label="SFX" description="SFX_DESC" />
+                
+                <param name="@spacer" type="spacer" default=" " label=" " description=" " />
+                
+				<param name="fixedHeight" type="radio" default="0" label="FIXEDH" description="FIXEDH_DESC">
+                        <option value="0">DISABLED</option>
+                        <option value="1">ENABLED</option>
+                </param>
+
+				<param name="fixedHeightValue" type="text" default="200" size="20" label="FIXEDHVALUE" description="FIXEDHVALUE_DESC" />
+				
+				<param name="alwaysHide" type="radio" default="0" label="ALWAYSH" description="ALWAYSH_DESC">
+                        <option value="0">DISABLED</option>
+                        <option value="1">ENABLED</option>
+                </param>                
+                
+        </params>
+        
+        <params group="advanced">
+                
+                <param name="clean_code" type="list" default="1" label="CLEANCODE" description="CLEANCODE_DESC">
+						<option value="1">ENABLED</option>
+                        <option value="0">DISABLED</option>
+                </param>
+
+   				<param name="useCSS" type="list" default="1" label="USECSS" description="USECSS_DESC">
+						<option value="1">ENABLED</option>
+                        <option value="0">DISABLED</option>
+                </param> 
+                
+                <param name="useMoo" type="list" default="2" label="USEMOO" description="USEMOO_DESC">
+                        <option value="2">AUTOMATIC</option>
+						<option value="1">FORCEENABLED</option>
+                        <option value="0">FORCEDISABLED</option>
+                </param>
+                
+                <param name="useScript" type="list" default="2" label="USEJS" description="USEJS_DESC">
+                        <option value="2">AUTOMATIC</option>
+						<option value="1">FORCEENABLED</option>
+                        <option value="0">FORCEDISABLED</option>
+                </param>
+                
+                <param name="compress_js" type="list" default="1" label="COMPRESS" description="COMPRESS_DESC">
+						<option value="1">ENABLED</option>
+                        <option value="0">DISABLED</option>
+                </param>
+        </params>    
+		
+</install>

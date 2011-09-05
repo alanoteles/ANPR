@@ -1,0 +1,120 @@
+.clearfix-tabs{
+	clear: both;
+}
+
+.gk_tab_item_space{
+	padding: 10px;
+}
+
+/* ||| set of clearing floats |||*/	
+.clearfix-tabs:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix-tabs {
+	display: inline-block;
+}
+/* Hides from IE-mac \*/
+* html .clearfix-tabs {
+	height: 1%;
+}
+.clearfix-tabs {
+	display: block;
+	clear: none;
+}
+/* End hide from IE-mac */
+/* ||| the end |||*/
+div.gk_tab-style3 {
+	position: relative;
+	background: #cee7fa url('../../images/vertical/style3/bg_ul.png') repeat-y 0 0;
+	padding: 0;
+	border: 1px solid #e3e3e3;
+}
+
+div.gk_tabmenu-style3 {
+	overflow:hidden;
+}
+
+ul.gk_tab_ul-style3 {
+	list-style-type: none;
+	margin: 0;
+	padding: 20px 0;
+	float: left;
+	width: 213px;
+	height: 100%;
+}
+
+ul.gk_tab_ul-style3 li {
+	cursor: pointer;
+	margin: 0;
+	position: relative;background: url('../../images/vertical/style3/bg_tab.png') no-repeat 100% 100%;
+	padding: 0;
+	padding-bottom: 2px;
+}
+
+ul.gk_tab_ul-style3 li span {
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 10px;
+	font-size: 10px;
+	text-align: center;
+	color: #fff;
+	text-transform:uppercase;
+	font-weight: bold;
+}
+
+ul.gk_tab_ul-style3 li.active span {
+	background: url('../../images/vertical/style3/bg_tab-active.png') no-repeat 100% 0;
+	color: #3f6b95;
+	padding: 0;
+}
+
+div.gk_tab_container0-style3 {
+	float: left;
+	background: #f1f1f1 url('../../images/vertical/style3/bg_mod.png') repeat-x 0 0;
+	padding: 0 20px;
+}
+
+div.gk_tab_container1-style3 {
+	overflow: hidden;margin: 10px 0;
+}
+
+div.gk_tab_item-style3 {
+	float: left;
+	overflow: hidden;
+}
+
+div.gk_tab_button_next-style3,
+div.gk_tab_button_prev-style3 {
+	width: 24px;
+	height: 24px;
+	background: url('../../images/vertical/style3/b_next.png') no-repeat 0 0;
+	cursor: pointer;
+	top: 86%;
+	position: absolute;
+	right: 10px;
+}
+
+div.gk_tab_button_prev-style3 {
+	background: url('../../images/vertical/style3/b_prev.png') no-repeat 0 0;
+	position: absolute;
+	right: 38px;
+}
+
+div.gk_tab_button_next-style3:hover {
+	background: url('../../images/vertical/style3/b_next.png') no-repeat 100% 0;
+}
+
+div.gk_tab_button_prev-style3:hover {
+	background: url('../../images/vertical/style3/b_prev.png') no-repeat 100% 0;
+}
+
+.gk_tab_container0-style3,
+.gk_tab_container1-style3,
+.gk_tab_container2-style3{
+	position:relative;
+}

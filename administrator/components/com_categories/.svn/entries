@@ -1,0 +1,63 @@
+10
+
+dir
+0
+http://alano@192.168.0.106/svn/anpr/administrator/components/com_categories
+http://alano@192.168.0.106/svn/anpr
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dca0dac9-5aa0-49d5-acc5-cec72a762977
+
+toolbar.categories.html.php
+file
+
+
+
+add
+
+admin.categories.php
+file
+
+
+
+add
+
+admin.categories.html.php
+file
+
+
+
+add
+
+index.html
+file
+
+
+
+add
+
+toolbar.categories.php
+file
+
+
+
+add
+

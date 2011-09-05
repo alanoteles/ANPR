@@ -1,0 +1,129 @@
+/* 
+* Mainpage
+******************************************************************************/
+
+td{
+	font-size: 11px !important;
+}
+
+div#wrapper {
+	width: 925px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+div.quick_button {
+	width: 25%;
+	margin: 2.5% 12.5%;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+}
+div#right-column div.quick_button {
+	width: 70%;
+	margin: 14% 12.5%;
+	float: none;
+}
+div.quick_button img {
+	display: block;
+	margin: 10px auto;
+}
+div.gavick_news {
+	clear: both;
+	width: 95%;
+	margin: 5% 2.5%;
+}
+div#wrapper h3 {
+	text-align: center;
+	margin-left: 5px;
+	margin-bottom: 20px;
+	font: normal 13px "Lucida Sans Unicode", "Lucida Grande", Arial, Verdana, sans-serif;
+	color: #0B55C4;
+}
+div#wrapper .adminform {
+	margin-left: 1px;
+}
+div.gavick_news .m {
+	overflow: hidden;
+}
+div.gavick_news ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+div.gavick_news li {
+	margin: 0 2.5% 20px;
+	padding: 0;
+	width: 100%;
+}
+div.gavick_news li p {
+	color: #666666;
+}
+div.gavick_news li h3 {
+	text-align: left!important;
+	margin: 0!important;
+}
+div#quick_tab_add,
+div#quick_group_add,
+div#quick_group_manage {
+	width: auto;
+	padding: 10px;
+	border: 5px solid #888;
+	-moz-border-radius: 3px;
+	position: absolute;
+	z-index: 1;
+	display: none;
+	background: #fff;
+}
+div#gk_navigation{
+	margin-bottom: 10px;
+}
+/* 
+* Gavick News
+******************************************************************************/
+
+div#news {
+	width: 960px;
+	margin: 0 auto;
+}
+div#news img {
+	float: left;
+	border: 1px solid #eaeaea;
+	padding: 1px;
+	margin: 2px 24px 5px 0;
+}
+/* 
+* Modal Box 
+******************************************************************************/
+
+#sbox-window {
+	background-color: #888 !important;
+	padding: 5px !important;
+}
+#save_settings {
+	float: right;
+	display: block;
+	margin: 10px;
+}
+/* Interface icons
+********************************************************************************/
+#cpanel {
+	padding: 20px;
+}
+#cpanel div.icon a {
+	background: #fff;
+}
+
+/* Naviagation 
+********************************************************************************/
+#gk_navigation {
+	background:#F9F9F9;
+	border: 1px solid #D5D5D5;
+	padding: 8px 23px;}
+	
+/* Joomla Toolbar 
+********************************************************************************/
+.icon-32-edit { background-image: url(../images/icon-32-section.png)!important; }
+.icon-32-css { background-image: url(../images/icon-32-news.png)!important; }
+.icon-32-frontpage { background-image: url(../images/home.png)!important; }

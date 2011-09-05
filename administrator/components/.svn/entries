@@ -1,0 +1,245 @@
+10
+
+dir
+0
+http://alano@192.168.0.106/svn/anpr/administrator/components
+http://alano@192.168.0.106/svn/anpr
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dca0dac9-5aa0-49d5-acc5-cec72a762977
+
+com_plugins
+dir
+
+
+
+add
+
+com_newsfeeds
+dir
+
+
+
+add
+
+com_frontpage
+dir
+
+
+
+add
+
+com_menus
+dir
+
+
+
+add
+
+com_admin
+dir
+
+
+
+add
+
+com_contact
+dir
+
+
+
+add
+
+com_installer
+dir
+
+
+
+add
+
+com_templates
+dir
+
+
+
+add
+
+com_config
+dir
+
+
+
+add
+
+com_poll
+dir
+
+
+
+add
+
+com_languages
+dir
+
+
+
+add
+
+com_weblinks
+dir
+
+
+
+add
+
+com_media
+dir
+
+
+
+add
+
+com_trash
+dir
+
+
+
+add
+
+com_categories
+dir
+
+
+
+add
+
+com_sections
+dir
+
+
+
+add
+
+com_gk3_tabs_manager
+dir
+
+
+
+add
+
+com_banners
+dir
+
+
+
+add
+
+com_users
+dir
+
+
+
+add
+
+com_jce
+dir
+
+
+
+add
+
+com_cpanel
+dir
+
+
+
+add
+
+com_cache
+dir
+
+
+
+add
+
+com_checkin
+dir
+
+
+
+add
+
+com_search
+dir
+
+
+
+add
+
+com_massmail
+dir
+
+
+
+add
+
+com_messages
+dir
+
+
+
+add
+
+com_modules
+dir
+
+
+
+add
+
+com_login
+dir
+
+
+
+add
+
+com_content
+dir
+
+
+
+add
+
+com_tag
+dir
+
+
+
+add
+
+index.html
+file
+
+
+
+add
+

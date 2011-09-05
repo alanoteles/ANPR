@@ -1,0 +1,91 @@
+10
+
+dir
+0
+http://alano@192.168.0.106/svn/anpr/administrator/components/com_newsfeeds
+http://alano@192.168.0.106/svn/anpr
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dca0dac9-5aa0-49d5-acc5-cec72a762977
+
+admin.newsfeeds.php
+file
+
+
+
+add
+
+newsfeeds.xml
+file
+
+
+
+add
+
+admin.newsfeeds.html.php
+file
+
+
+
+add
+
+config.xml
+file
+
+
+
+add
+
+index.html
+file
+
+
+
+add
+
+tables
+dir
+
+
+
+add
+
+toolbar.newsfeeds.php
+file
+
+
+
+add
+
+elements
+dir
+
+
+
+add
+
+toolbar.newsfeeds.html.php
+file
+
+
+
+add
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5">
+	<name>Facebook Like Box</name>
+	<author>Sunento Wu</author>
+	<authorEmail>sunwu2007@gmail.com</authorEmail>
+	<authorUrl>http://vivociti.com</authorUrl>
+	<creationDate>2010-05-16</creationDate>
+	<copyright>Copyright (C) 2010 Sunento Wul. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL 2.0</license>
+	<version>2.2</version>
+	<description> 
+		Facebook Like Box is a social module that enables Facebook Page owners to attract and gain Likes from their own website. The Like Box enables users to: see how many users already like this page, and which of their friends like it too, read recent posts from the page and Like the page with one click, without needing to visit the page.</description>
+	<files>
+		<filename module="mod_facebook_like_box">mod_facebook_like_box.php</filename>
+	</files>
+	<params>
+		<field name="pageURL" type="text" default="" label="Your Facebook Page URL" description="Your Facebook Page URL ( i.e.  http://www.facebook.com/pages/VivoCiticom-Joomla-Wordpress-Blogger-Drupal-DNN-Community/119691288064264 )" />
+		<field name="pageID" type="text" default="" label="Facebook Page ID (Leave this blank if you have Page URL)" description="The ID of the Facebook Page for this Like Box. You can leave this as blank if you have Fabebook Page URL filled up above" />
+		<param name="width" type="text" default="292" label="Width" description="The Width of the module in pixes" />
+		<param name="height" type="text" default="105" label="Height" description="The Height of the module in pixes" />
+		<param name="colorScheme" type="list" default="light" label="Color Scheme" description="The color scheme for the plugin. Options: 'light', 'dark'.">
+			<option value="light">light</option>
+			<option value="dark">dark</option>
+		</param>
+		<param name="showFaces" type="list" default="yes" label="Show Faces" description="Show profile photos in the plugin.">
+			<option value="yes">yes</option>
+			<option value="no">no</option>
+		</param>
+		<param name="connection" type="text" default="10" label="Connections" description="Show a sample of this many users who have liked this Page"/>
+		<param name="streams" type="list" default="yes" label="Streams" description="Show the profile stream for Public Profile">
+				<option value="yes">yes</option>
+				<option value="no">no</option>
+		</param>
+		<param name="header" type="list" default="yes" label="Header" description="Show the Find Us on Facebook bar at top. Only shown when either stream or connections are present">
+				<option value="yes">yes</option>
+				<option value="no">no</option>
+		</param>
+		<param name="moduleBy" type="list" default="no" label="Support Our Development by contributing money (Visit: http://bit.ly/9Njzpo) ?" description="You can show your support to our development time by donating or by credit to us with small link to our website - Visit : http://bit.ly/9Njzpo">
+				<option value="yes">yes</option>
+				<option value="no">no</option>
+		</param>
+	</params>
+</install>

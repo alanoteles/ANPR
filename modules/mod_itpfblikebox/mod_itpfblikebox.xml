@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+	<name>ITPFacebookLikeBox</name>
+	<author>Todor Iliev</author>
+	<creationDate>January, 2010</creationDate>
+	<copyright>Copyright (C) 2010 Todor Iliev ( ITPrism.com )</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>todor@itprism.com</authorEmail>
+	<authorUrl>http://itprism.com</authorUrl>
+	<version>1.2</version>
+	<description>MOD_ITPFBLIKEBOX_DESC</description>
+	<files>
+		<filename module="mod_itpfblikebox">mod_itpfblikebox.php</filename>
+		<filename>index.html</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>
+	</files>
+
+	<params>
+        <param name="fbPageLink" type="text" default="" size="100" label="MOD_ITPFBLIKEBOX_PAGE_LINK" description="MOD_ITPFBLIKEBOX_PAGE_LINK_DESC" />        
+        <param name="fbRendering" type="radio" default="0" label="MOD_ITPFBLIKEBOX_RENDERING" description="MOD_ITPFBLIKEBOX_RENDERING_DESC" >
+           <option value="0">iframe</option>
+           <option value="1">XFBML</option>
+        </param>
+        <param name="fbWidth" type="text" default="250" label="MOD_ITPFBLIKEBOX_WIDTH" description="MOD_ITPFBLIKEBOX_WIDTH_DESC" />
+        <param name="fbHeight" type="text" default="427" label="MOD_ITPFBLIKEBOX_HEIGHT" description="MOD_ITPFBLIKEBOX_HEIGHT_DESC" />
+        <param name="fbColour" type="list" default="light" label="MOD_ITPFBLIKEBOX_COLOUR" description="MOD_ITPFBLIKEBOX_COLOUR_DESC">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </param>
+        <param name="fbFaces" type="radio" default="1" label="MOD_ITPFBLIKEBOX_FACES" description="MOD_ITPFBLIKEBOX_FACES_DESC">
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="fbStream" type="radio" default="1" label="MOD_ITPFBLIKEBOX_STREAM" description="MOD_ITPFBLIKEBOX_STREAM_DESC">
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="fbHeader" type="radio" default="1" label="MOD_ITPFBLIKEBOX_HEADER" description="MOD_ITPFBLIKEBOX_HEADER_DESC">
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="fbDynamicLocale" type="radio" default="1" label="MOD_ITPFBLIKEBOX_DYN_LOCALE" description="MOD_ITPFBLIKEBOX_DYN_LOCALE_DESC">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </param>
+        <param name="fbLocale" type="list" default="pt_BR" label="MOD_ITPFBLIKEBOX_LANGUAGE" description="MOD_ITPFBLIKEBOX_LANGUAGE_DESC">
+            <option value="af_ZA">MOD_ITPFBLIKEBOX_AF_ZA</option>
+            <option value="ar_AR">MOD_ITPFBLIKEBOX_AR_AR</option>
+            <option value="ay_BO">MOD_ITPFBLIKEBOX_AY_BO</option>
+            <option value="az_AZ">MOD_ITPFBLIKEBOX_AZ_AZ</option>
+            <option value="be_BY">MOD_ITPFBLIKEBOX_BE_BY</option>
+            <option value="bg_BG">MOD_ITPFBLIKEBOX_BG_BG</option>
+            <option value="bn_IN">MOD_ITPFBLIKEBOX_BN_IN</option>
+            <option value="bs_BA">MOD_ITPFBLIKEBOX_BS_BA</option>
+            <option value="ca_ES">MOD_ITPFBLIKEBOX_CA_ES</option>
+            <option value="ck_US">MOD_ITPFBLIKEBOX_CK_US</option>
+            <option value="cs_CZ">MOD_ITPFBLIKEBOX_CS_CZ</option>
+            <option value="cy_GB">MOD_ITPFBLIKEBOX_CY_GB</option>
+            <option value="da_DK">MOD_ITPFBLIKEBOX_DA_DK</option>
+            <option value="de_DE">MOD_ITPFBLIKEBOX_DE_DE</option>
+            <option value="el_GR">MOD_ITPFBLIKEBOX_EL_GR</option>
+            <option value="en_GB">MOD_ITPFBLIKEBOX_EN_GB</option>
+            <option value="en_PI">MOD_ITPFBLIKEBOX_EN_PI</option>
+            <option value="en_UD">MOD_ITPFBLIKEBOX_EN_UD</option>
+            <option value="en_US">MOD_ITPFBLIKEBOX_EN_US</option>
+            <option value="eo_EO">MOD_ITPFBLIKEBOX_EO_EO</option>
+            <option value="es_CL">MOD_ITPFBLIKEBOX_ES_CL</option>
+            <option value="es_CO">MOD_ITPFBLIKEBOX_ES_CO</option>
+            <option value="es_ES">MOD_ITPFBLIKEBOX_ES_ES</option>
+            <option value="es_LA">MOD_ITPFBLIKEBOX_ES_LA</option>
+            <option value="es_MX">MOD_ITPFBLIKEBOX_ES_MX</option>
+            <option value="es_VE">MOD_ITPFBLIKEBOX_ES_MX</option>
+            <option value="et_EE">MOD_ITPFBLIKEBOX_ET_EE</option>
+            <option value="eu_ES">MOD_ITPFBLIKEBOX_EU_ES</option>
+            <option value="fa_IR">MOD_ITPFBLIKEBOX_FA_IR</option>
+            <option value="fb_LT">MOD_ITPFBLIKEBOX_FB_LT</option>
+            <option value="fi_FI">MOD_ITPFBLIKEBOX_FI_FI</option>
+            <option value="fo_FO">MOD_ITPFBLIKEBOX_FO_FO</option>
+            <option value="fr_CA">MOD_ITPFBLIKEBOX_FR_CA</option>
+            <option value="fr_FR">MOD_ITPFBLIKEBOX_FR_FR</option>
+            <option value="ga_IE">MOD_ITPFBLIKEBOX_GA_IE</option>
+            <option value="gl_ES">MOD_ITPFBLIKEBOX_GL_ES</option>
+            <option value="gn_PY">MOD_ITPFBLIKEBOX_GN_PY</option>
+            <option value="gu_IN">MOD_ITPFBLIKEBOX_GU_IN</option>
+            <option value="he_IL">MOD_ITPFBLIKEBOX_HE_IL</option>
+            <option value="hi_IN">MOD_ITPFBLIKEBOX_HI_IN</option>
+            <option value="hr_HR">MOD_ITPFBLIKEBOX_HR_HR</option>
+            <option value="hu_HU">MOD_ITPFBLIKEBOX_HU_HU</option>
+            <option value="hy_AM">MOD_ITPFBLIKEBOX_HY_AM</option>
+            <option value="id_ID">MOD_ITPFBLIKEBOX_ID_ID</option>
+            <option value="is_IS">MOD_ITPFBLIKEBOX_IS_IS</option>
+            <option value="it_IT">MOD_ITPFBLIKEBOX_IT_IT</option>
+            <option value="ja_JP">MOD_ITPFBLIKEBOX_JA_JP</option>
+            <option value="jv_ID">MOD_ITPFBLIKEBOX_JV_ID</option>
+            <option value="ka_GE">MOD_ITPFBLIKEBOX_KA_GE</option>
+            <option value="kk_KZ">MOD_ITPFBLIKEBOX_KK_KZ</option>
+            <option value="km_KH">MOD_ITPFBLIKEBOX_KM_KH</option>
+            <option value="kn_IN">MOD_ITPFBLIKEBOX_KN_IN</option>
+            <option value="ko_KR">MOD_ITPFBLIKEBOX_KO_KR</option>
+            <option value="ku_TR">MOD_ITPFBLIKEBOX_KU_TR</option>
+            <option value="la_VA">MOD_ITPFBLIKEBOX_LA_VA</option>
+            <option value="li_NL">MOD_ITPFBLIKEBOX_LI_NL</option>
+            <option value="lt_LT">MOD_ITPFBLIKEBOX_LT_LT</option>
+            <option value="lv_LV">MOD_ITPFBLIKEBOX_LV_LV</option>
+            <option value="mg_MG">MOD_ITPFBLIKEBOX_MG_MG</option>
+            <option value="mk_MK">MOD_ITPFBLIKEBOX_MK_MK</option>
+            <option value="ml_IN">MOD_ITPFBLIKEBOX_ML_IN</option>
+            <option value="mn_MN">MOD_ITPFBLIKEBOX_MN_MN</option>
+            <option value="mr_IN">MOD_ITPFBLIKEBOX_MR_IN</option>
+            <option value="ms_MY">MOD_ITPFBLIKEBOX_MS_MY</option>
+            <option value="mt_MT">MOD_ITPFBLIKEBOX_MT_MT</option>
+            <option value="nb_NO">MOD_ITPFBLIKEBOX_NB_NO</option>
+            <option value="ne_NP">MOD_ITPFBLIKEBOX_NE_NP</option>
+            <option value="nl_BE">MOD_ITPFBLIKEBOX_NL_BE</option>
+            <option value="nl_NL">MOD_ITPFBLIKEBOX_NL_NL</option>
+            <option value="nn_NO">MOD_ITPFBLIKEBOX_NN_NO</option>
+            <option value="pa_IN">MOD_ITPFBLIKEBOX_PA_IN</option>
+            <option value="pl_PL">MOD_ITPFBLIKEBOX_PL_PL</option>
+            <option value="ps_AF">MOD_ITPFBLIKEBOX_PS_AF</option>
+            <option value="pt_BR">MOD_ITPFBLIKEBOX_PT_BR</option>
+            <option value="pt_PT">MOD_ITPFBLIKEBOX_PT_PT</option>
+            <option value="qu_PE">MOD_ITPFBLIKEBOX_QU_PE</option>
+            <option value="rm_CH">MOD_ITPFBLIKEBOX_RM_CH</option>
+            <option value="ro_RO">MOD_ITPFBLIKEBOX_RO_RO</option>
+            <option value="ru_RU">MOD_ITPFBLIKEBOX_RU_RU</option>
+            <option value="sa_IN">MOD_ITPFBLIKEBOX_SA_IN</option>
+            <option value="se_NO">MOD_ITPFBLIKEBOX_SE_NO</option>
+            <option value="sk_SK">MOD_ITPFBLIKEBOX_SK_SK</option>
+            <option value="sl_SI">MOD_ITPFBLIKEBOX_SL_SI</option>
+            <option value="so_SO">MOD_ITPFBLIKEBOX_SO_SO</option>
+            <option value="sq_AL">MOD_ITPFBLIKEBOX_SQ_AL</option>
+            <option value="sr_RS">MOD_ITPFBLIKEBOX_SR_RS</option>
+            <option value="sv_SE">MOD_ITPFBLIKEBOX_SV_SE</option>
+            <option value="sw_KE">MOD_ITPFBLIKEBOX_SW_KE</option>
+            <option value="sy_SY">MOD_ITPFBLIKEBOX_SY_SY</option>
+            <option value="ta_IN">MOD_ITPFBLIKEBOX_TA_IN</option>
+            <option value="te_IN">MOD_ITPFBLIKEBOX_TE_IN</option>
+            <option value="tg_TJ">MOD_ITPFBLIKEBOX_TG_TJ</option>
+            <option value="th_TH">MOD_ITPFBLIKEBOX_TH_TH</option>
+            <option value="tl_PH">MOD_ITPFBLIKEBOX_TL_PH</option>
+            <option value="tl_ST">MOD_ITPFBLIKEBOX_TL_ST</option>
+            <option value="tr_TR">MOD_ITPFBLIKEBOX_TR_TR</option>
+            <option value="tt_RU">MOD_ITPFBLIKEBOX_TT_RU</option>
+            <option value="uk_UA">MOD_ITPFBLIKEBOX_UK_UA</option>
+            <option value="ur_PK">MOD_ITPFBLIKEBOX_UR_PK</option>
+            <option value="uz_UZ">MOD_ITPFBLIKEBOX_UZ_UZ</option>
+            <option value="vi_VN">MOD_ITPFBLIKEBOX_VI_VN</option>
+            <option value="xh_ZA">MOD_ITPFBLIKEBOX_XH_ZA</option>
+            <option value="yi_DE">MOD_ITPFBLIKEBOX_YI_DE</option>
+            <option value="zh_CN">MOD_ITPFBLIKEBOX_ZH_CN</option>
+            <option value="zh_HK">MOD_ITPFBLIKEBOX_ZH_HK</option>
+            <option value="zh_TW">MOD_ITPFBLIKEBOX_ZH_TW</option>
+            <option value="zu_ZA">MOD_ITPFBLIKEBOX_ZU_ZA</option>
+        </param>
+	</params>
+
+    <params group="advanced">
+		<param name="moduleclass_sfx" type="text" default="" label="MODULE_CSS_SUFFIX" description="MODULE_CSS_SUFFIX_DESC" />
+        <param name="cache" type="list" default="0" label="CACHING" description="CACHING_DESC">
+            <option value="1">Use global</option>
+            <option value="0">No caching</option>
+        </param>
+        <param name="cache_time" type="text" default="900" label="CACHING_TIME" description="CACHING_TIME_DESC" />
+        <param name="fbLoadJsLib" type="radio" default="1" label="MOD_ITPFBLIKEBOX_LOAD_JS_LIB" description="MOD_ITPFBLIKEBOX_LOAD_JS_LIB_DESC">
+           <option value="0">JNO</option>
+           <option value="1">JYES</option>
+        </param>
+    </params>
+	
+	<languages>
+        <language tag="pt-BR">pt-BR.mod_itpfblikebox.ini</language>
+    </languages>    
+</install>

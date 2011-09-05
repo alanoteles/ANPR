@@ -1,0 +1,9 @@
+#popup_extension_widgetkit input[type="text"] {
+	width : 250px;
+}
+#popup_extension_widgetkit select {
+	width: auto;
+}
+#popup_extension_widgetkit #widgetkit_lightbox_width, #popup_extension_widgetkit #widgetkit_lightbox_height, #popup_extension_widgetkit #widgetkit_lightbox_padding {
+	width : 50px;
+}

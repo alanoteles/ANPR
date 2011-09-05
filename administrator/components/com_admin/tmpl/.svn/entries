@@ -1,0 +1,77 @@
+10
+
+dir
+0
+http://alano@192.168.0.106/svn/anpr/administrator/components/com_admin/tmpl
+http://alano@192.168.0.106/svn/anpr
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dca0dac9-5aa0-49d5-acc5-cec72a762977
+
+sysinfo_phpinfo.php
+file
+
+
+
+add
+
+sysinfo_directory.php
+file
+
+
+
+add
+
+sysinfo_system.php
+file
+
+
+
+add
+
+navigation.php
+file
+
+
+
+add
+
+sysinfo_config.php
+file
+
+
+
+add
+
+sysinfo_phpsettings.php
+file
+
+
+
+add
+
+index.html
+file
+
+
+
+add
+

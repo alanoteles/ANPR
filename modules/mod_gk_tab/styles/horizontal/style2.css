@@ -1,0 +1,99 @@
+.clearfix-tabs{
+	clear: both;
+}
+
+.gk_tab_item_space{
+	padding: 10px;
+}
+
+div.gk_tab-style2 {
+	position: relative;
+}
+
+div.gk_tab_wrap-style2 {
+	margin: 0 auto;
+}
+
+div.gk_tabmenu-style2 {
+	overflow:hidden;
+}
+
+ul.gk_tab_ul-style2 {
+	list-style: none;
+	margin: 0 0 0 18px;
+	padding: 0;
+}
+
+ul.gk_tab_ul-style2 li {
+	background: none;
+	float: left;
+	cursor: pointer;
+	margin: 0 0 -1px 0;
+	position: relative;
+	padding: 0 9px;
+}
+
+ul.gk_tab_ul-style2 li span {
+	display: block;
+	height: 25px;
+	line-height: 25px;
+	padding: 0 18px 0 9px;
+	font-size: 10px;
+	color: #666;
+	text-transform:uppercase;
+}
+
+ul.gk_tab_ul-style2 li.active {
+	background: url('../../images/horizontal/style2/bg_tab-l.png') no-repeat 0 0;
+}
+
+ul.gk_tab_ul-style2 li.active span {
+	background: url('../../images/horizontal/style2/bg_tab-r.png') no-repeat 100% 0;
+	color: #aa2207;
+}
+
+div.gk_tab_container0-style2 {
+	clear: both;
+	border-top: 1px solid #d5d5d5;
+}
+
+div.gk_tab_container1-style2 {
+	overflow: hidden;
+}
+
+div.gk_tab_item-style2 {
+	float: left;
+	overflow: hidden;
+	padding: 10px;
+}
+
+div.gk_tab_button_next-style2,
+div.gk_tab_button_prev-style2 {
+	width: 24px;
+	height: 24px;
+	background: url('../../images/horizontal/style2/b_next.png') no-repeat 0 0;
+	cursor: pointer;
+	position: absolute;
+	top: 43%;
+	right: 0;
+}
+
+div.gk_tab_button_prev-style2 {
+	background: url('../../images/horizontal/style2/b_prev.png') no-repeat 0 0;
+	left: 0;
+	right:inherit;
+}
+
+div.gk_tab_button_next-style2:hover {
+	background: url('../../images/horizontal/style2/b_next.png') no-repeat 100% 0;
+}
+
+div.gk_tab_button_prev-style2:hover {
+	background: url('../../images/horizontal/style2/b_prev.png') no-repeat 100% 0;
+}
+
+.gk_tab_container0-style2,
+.gk_tab_container1-style2,
+.gk_tab_container2-style2{
+	position:relative;
+}

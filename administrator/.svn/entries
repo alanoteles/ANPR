@@ -1,0 +1,112 @@
+10
+
+dir
+0
+http://alano@192.168.0.106/svn/anpr/administrator
+http://alano@192.168.0.106/svn/anpr
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dca0dac9-5aa0-49d5-acc5-cec72a762977
+
+index2.php
+file
+
+
+
+add
+
+index3.php
+file
+
+
+
+add
+
+cache
+dir
+
+
+
+add
+
+language
+dir
+
+
+
+add
+
+components
+dir
+
+
+
+add
+
+images
+dir
+
+
+
+add
+
+includes
+dir
+
+
+
+add
+
+backups
+dir
+
+
+
+add
+
+help
+dir
+
+
+
+add
+
+modules
+dir
+
+
+
+add
+
+index.php
+file
+
+
+
+add
+
+templates
+dir
+
+
+
+add
+

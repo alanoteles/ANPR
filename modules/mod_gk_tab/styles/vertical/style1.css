@@ -1,0 +1,122 @@
+.clearfix-tabs{
+	clear: both;
+}
+
+.gk_tab_item_space{
+	padding: 10px;
+}
+
+/* ||| set of clearing floats |||*/	
+.clearfix-tabs:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix-tabs {
+	display: inline-block;
+}
+/* Hides from IE-mac \*/
+* html .clearfix-tabs {
+	height: 1%;
+}
+.clearfix-tabs {
+	display: block!Important;
+	clear: none!Important;
+}
+/* End hide from IE-mac */
+/* ||| the end |||*/
+div.gk_tab-style1 {
+	position: relative;
+	background: #f1f1f1 url('../../images/vertical/style1/bg_mod.png') repeat-x 0 0;
+	padding: 20px 0;
+	border: 1px solid #e3e3e3;
+}
+
+div.gk_tabmenu-style1 {
+	overflow:hidden;
+}
+
+ul.gk_tab_ul-style1 {
+	list-style-type: none;
+	margin: 0 0 0 20px;
+	padding: 0;
+	float: left;
+	width: 20%;
+}
+
+ul.gk_tab_ul-style1 li {
+ 	background: none;
+	cursor: pointer;
+	margin: 0 0 9px;
+	position: relative;
+	padding: 1px;
+	padding-bottom: 0px;
+}
+
+ul.gk_tab_ul-style1 li span {
+	background: url('../../images/vertical/style1/bg_tab.png') repeat-x 0 0;
+	display: block;
+	height: 27px;
+	line-height: 27px;
+	padding: 0 10px 0 10px;
+	font-size: 10px;
+	text-align: center;
+	color: #666;
+	text-transform:uppercase;
+	border: 1px solid #e0e0e0;
+}
+
+ul.gk_tab_ul-style1 li.active span {
+	background: url('../../images/vertical/style1/bg_tab-active.png') repeat-x 0 0;
+	color: #fff;
+	border: 1px solid #84a9c3;
+}
+
+div.gk_tab_container0-style1 {
+	float: left;
+	background: url('../../images/vertical/style1/bg_bullet.png') repeat-y 0 0;
+	margin-left: 20px;
+	padding: 0 20px;
+}
+
+div.gk_tab_container1-style1 {
+	overflow: hidden;
+}
+
+div.gk_tab_item-style1 {
+	float: left;
+	overflow: hidden;
+}
+
+div.gk_tab_button_next-style1,
+div.gk_tab_button_prev-style1 {
+	width: 24px;
+	height: 24px;
+	background: url('../../images/vertical/style1/b_next.png') no-repeat 0 0;
+	cursor: pointer;
+	top: 86%;
+	position: absolute;
+	right: 10px;
+}
+
+div.gk_tab_button_prev-style1 {
+	background: url('../../images/vertical/style1/b_prev.png') no-repeat 0 0;
+	position: absolute;
+	right: 38px;
+}
+
+div.gk_tab_button_next-style1:hover {
+	background: url('../../images/vertical/style1/b_next.png') no-repeat 100% 0;
+}
+
+div.gk_tab_button_prev-style1:hover {
+	background: url('../../images/vertical/style1/b_prev.png') no-repeat 100% 0;
+}
+
+.gk_tab_container0-style1,
+.gk_tab_container1-style1,
+.gk_tab_container2-style1{
+	position:relative;
+}

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Superfish Menu</name>
+	<author>Cy Morris</author>
+	<creationDate>December 2008</creationDate>
+	<copyright>Copyright 2008</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>cy@cymorris.com</authorEmail>
+	<authorUrl>www.cymorris.com</authorUrl>
+	<version>1.2.6</version>
+	<description>
+		Displays a dropdown menu using mod_mainmenu with jQuery, Superfish and plugins.
+		
+		mod_mainmenu			: Copyright 2005-2008, Joomla! Project (www.joomla.org)
+		Superfish				: Copyright 2008, Joel Birch (http://users.tpg.com.au/j_birch/plugins/superfish)
+		Supersubs				: Copyright 2008, Joel Birch
+		$.event.special.hover	: Copyright 2008, Three Dub Media (www.threedubmedia.com)
+		bgIframe				: Copyright 2006, Brandon Aaron (www.brandonaaron.net)
+		jQuery 					: Copyright 2008, John Resig (www.jquery.com)
+		superfish_width_mod 	: Copyright 2009, Cy Morris (www.cymorris.com)
+	</description>
+	<files>
+		<filename module="mod_superfishmenu">mod_superfishmenu.php</filename>
+		<filename module="mod_superfishmenu">mod_superfishmenu.xml</filename>
+		<filename module="mod_superfishmenu">Copyrights.txt</filename>
+		<filename module="mod_superfishmenu">helper.php</filename>
+		<filename module="mod_superfishmenu">index.html</filename>
+		<filename module="mod_superfishmenu">tmpl/index.html</filename>
+		<filename module="mod_superfishmenu">tmpl/default.php</filename>
+		<filename module="mod_superfishmenu">tmpl/css/superfish.css</filename>
+		<filename module="mod_superfishmenu">tmpl/css/superfish-navbar.css</filename>
+		<filename module="mod_superfishmenu">tmpl/css/superfish-vertical.css</filename>
+		<filename module="mod_superfishmenu">tmpl/images/arrows-ffffff.png</filename>
+		<filename module="mod_superfishmenu">tmpl/images/shadow.png</filename>
+		<filename module="mod_superfishmenu">tmpl/js/jquery.bgiframe.min.js</filename>
+		<filename module="mod_superfishmenu">tmpl/js/jquery.event.hover.js</filename>
+		<filename module="mod_superfishmenu">tmpl/js/jquery.js</filename>
+		<filename module="mod_superfishmenu">tmpl/js/superfish.js</filename>
+		<filename module="mod_superfishmenu">tmpl/js/supersubs.js</filename>
+		<filename module="mod_superfishmenu">tmpl/js/superfish_width_mod.js</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_superfishmenu.ini</language>
+	</languages>
+
+	<params>
+	
+		<param name="@spacer_space" type="spacer" default=" " label="" description="" />
+	
+			<param name="menutype" type="mos_menu" default="" label="LABEL_MENUTYPE" description="DESC_MENUTYPE" />
+	
+			<param name="menu_style" type="list" default="horizontal" label="LABEL_MENU_STYLE" description="DESC_MENU_STYLE">
+				<option value="horizontal">VALUE_MENU_STYLE_HORIZONTAL</option>
+				<option value="vertical">VALUE_MENU_STYLE_VERTICAL</option>
+				<option value="navbar">VALUE_MENU_STYLE_NAVBAR</option>
+				<option value="list">VALUE_MENU_STYLE_ACCORDIAN</option>
+			</param>
+	
+			<param name="animation" type="list" default="{opacity:'show'}" label="LABEL_ANIMATION" description="DESC_ANIMATION">
+				<option value="{height:'show'}">VALUE_ANIMATION_SLIDE_DOWN</option>
+				<option value="{width:'show'}">VALUE_ANIMATION_SLIDE_RIGHT</option>
+				<option value="{width:'show', height:'show'}">VALUE_ANIMATION_SLIDE_DOWN_RIGHT</option>
+				<option value="{opacity:'show'}">VALUE_ANIMATION_FADE_IN</option>
+				<option value="{opacity:'show', height:'show'}">VALUE_ANIMATION_FADE_IN_SLIDE_DOWN</option>
+				<option value="{opacity:'show', width:'show'}">VALUE_ANIMATION_FADE_IN_SLIDE_RIGHT</option>
+				<option value="{opacity:'show', height:'show', width:'show'}">VALUE_ANIMATION_FADE_IN_SLIDE_DOWN_RIGHT</option>
+				<option value="custom">VALUE_ANIMATION_CUSTOM</option>
+			</param>
+	
+		<param name="@spacer_space" type="spacer" default=" " label="" description="" />
+	
+			<param name="speed" type="text" default="def" label="LABEL_SPEED" description="DESC_SPEED" />
+			<param name="delay" type="text" default="800" label="LABEL_DELAY" description="DESC_DELAY" />
+			<param name="hoverClass" type="text" default="sfHover" size="50" label="LABEL_HOVERCLASS" description="DESC_HOVERCLASS" />
+			<param name="pathClass" type="text" default="active" size="50" label="LABEL_PATH_CLASS" description="DESC_PATH_CLASS" />
+			<param name="pathLevels" type="text" default="1" label="LABEL_PATHLEVELS" description="DESC_PATHLEVELS" />
+	
+	
+			<param name="autoArrows" type="radio" default="1" label="LABEL_AUTOARROWS" description="DESC_AUTOARROWS">
+				<option value="0">VALUE_NO</option>
+				<option value="1">VALUE_YES</option>
+			</param>
+	
+			<param name="dropShadows" type="radio" default="1" label="LABEL_DROPSHADOWS" description="DESC_DROPSHADOWS">
+				<option value="0">VALUE_NO</option>
+				<option value="1">VALUE_YES</option>
+			</param>
+	
+			<param name="clearingDiv" type="radio" default="0" label="LABEL_ADDCLEAR" description="DESC_ADDCLEAR">
+				<option value="0">VALUE_NO</option>
+				<option value="1">VALUE_YES</option>
+			</param>
+	
+	
+		<param name="@spacer_space" type="spacer" default=" " label="" description="" />
+		<param name="@spacer_custom_css" type="spacer" default="&lt;b&gt; CUSTOM STYLING &lt;/b&gt;" label="" description="" />
+		<param name="@spacer_line" type="spacer" default="" label="" description="" />
+	
+			<param name="custom_stylesheets" type="textarea" default="" rows="2" cols="35" label="LABEL_CUSTOM_STYLESHEETS" description="DESC_CUSTOM_STYLESHEETS" />
+			<param name="@spacer_custom_stylesheets_format" type="spacer" default="&lt;b&gt;Format:&lt;/b&gt; url[:media]&lt;br /&gt;Enter one url per line.&lt;br /&gt;Escape any colons in the url with a backslash (\).&lt;br /&gt;{mostemplate} refers to current template url&lt;br /&gt;{parameter_name} refers to a template parameter&lt;br /&gt;&lt;b&gt;Examples:&lt;/b&gt;&lt;br /&gt;{mostemplate}/css/menu.css&lt;br /&gt;{mostemplate}/{style}/css/other.css:screen&lt;br /&gt;http://someurl.com/css/menu.css&lt;br /&gt;http://someurl.com/css.php?vals=somevalue\:othervalue" label="" description="" />
+			<param name="custom_css" type="textarea" rows="10" cols="35" default="" size="5" label="LABEL_CUSTOM_CSS" description="DESC_CUSTOM_CSS" />
+	
+	
+		<param name="@spacer_space" type="spacer" default=" " label="" description="" />
+		<param name="@spacer_custom_animation" type="spacer" default="&lt;b&gt; CUSTOM ANIMATION &lt;/b&gt;" label="" description="" />
+		<param name="@spacer_line" type="spacer" default="" label="" description="" />
+
+			<param name="custom_animation" type="textarea" rows="3" cols="35" default="{opacity:'show', height:'show', width:'show'}" label="LABEL_CUSTOM_ANIMATION" description="DESC_CUSTOM_ANIMATION" />
+			<param name="@spacer_custom_animation_format" type="spacer" default="Set Animation to &quot;Custom&quot; above for this to take effect.&lt;br /&gt;&lt;br /&gt;&lt;b&gt;Format:&lt;/b&gt;  { &lt;span style='color:blue;'&gt;propertyName&lt;/span&gt;:'&lt;span style='color:maroon;'&gt;value&lt;/span&gt;', &lt;span style='color:blue;'&gt;propertyName&lt;/span&gt;:'&lt;span style='color:maroon;'&gt;value&lt;/span&gt;' }&lt;br /&gt;&lt;span style='color:blue;'&gt;propertyName&lt;/span&gt;: any css property with a numeric value&lt;br /&gt;&lt;span style='color:maroon;'&gt;value&lt;/span&gt;: number(px, em, %), show, hide, or toggle. &lt;br /&gt;&lt;b&gt;opacity:&lt;/b&gt; value from 0.0 to 1.0, show, hide, or toggle&lt;br /&gt;&lt;br /&gt;More Info: &lt;a href=&quot;http://docs.jquery.com/Effects/animate&quot; target=&quot;_blank&quot;&gt;http://docs.jquery.com/Effects/animate&lt;/a&gt;" label="" description="" />
+	
+	
+		<param name="@spacer_space" type="spacer" default=" " label="" description="" />
+		<param name="@spacer_menuwidth" type="spacer" default="&lt;b&gt; CUSTOM MENU WIDTH (BETA) &lt;/b&gt;" label="" description="" />
+		<param name="@spacer_line" type="spacer" default="" label="" description="" />
+	
+			<param name="menuWidthMod_enable" type="radio" default="0" label="LABEL_MENUWIDTHMOD_ENABLE" description="DESC_MENUWIDTHMOD_ENABLE">
+				<option value="0">VALUE_NO</option>
+				<option value="1">VALUE_YES</option>
+			</param>
+	
+			<param name="menuWidthMod_menuWidth" type="text" default="100%" label="LABEL_MENUWIDTHMOD_MENUWIDTH" description="DESC_MENUWIDTHMOD_MENUWIDTH" />
+			
+			<param name="menuWidthMod_equalWidth" type="radio" default="1" label="LABEL_MENUWIDTHMOD_EQUALWIDTH" description="DESC_MENUWIDTHMOD_EQUALWIDTH">
+				<option value="0">VALUE_NO</option>
+				<option value="1">VALUE_YES</option>
+			</param>
+			
+			<param name="menuWidthMod_resizeSeps" type="radio" default="0" label="LABEL_MENUWIDTHMOD_RESIZESEPS" description="DESC_MENUWIDTHMOD_RESIZESEPS">
+				<option value="0">VALUE_NO</option>
+				<option value="1">VALUE_YES</option>
+			</param>
+			
+			<param name="menuWidthMod_resizeSubMenus" type="radio" default="1" label="LABEL_MENUWIDTHMOD_RESIZESUBMENUS" description="DESC_MENUWIDTHMOD_RESIZESUBMENUS">
+				<option value="0">VALUE_NO</option>
+				<option value="1">VALUE_YES</option>
+			</param>
+			
+			
+		<param name="@spacer_space" type="spacer" default=" " label="" description="" />
+		<param name="@spacer_intent" type="spacer" default="&lt;b&gt; DETECT MOUSE INTENT &lt;/b&gt;" label="" description="" />
+		<param name="@spacer_line" type="spacer" default="" label="" description="" />
+			
+			<param name="useEventSpecialHover" type="radio" default="1" label="LABEL_USEEVENTSPECIALHOVER" description="DESC_USEEVENTSPECIALHOVER">
+				<option value="0">VALUE_NO</option>
+				<option value="1">VALUE_YES</option>
+			</param>
+	
+			<param name="hover_delay" type="text" default="100" label="LABEL_HOVER_DELAY" description="DESC_HOVER_DELAY" />
+			<param name="hover_speed" type="text" default="100" label="LABEL_HOVER_SPEED" description="DESC_HOVER_SPEED" />
+			
+	
+		<param name="@spacer_space" type="spacer" default=" " label="" description="" />
+		<param name="@spacer_subwidth" type="spacer" default="&lt;b&gt; VARIABLE WIDTH SUB-MENUS (BETA) &lt;/b&gt;" label="" description="" />
+		<param name="@spacer_line" type="spacer" default="" label="" description="" />
+	
+			<param name="useSuperSubs" type="radio" default="0" label="LABEL_USESUPERSUBS" description="DESC_USESUPERSUBS">
+				<option value="0">VALUE_NO</option>
+				<option value="1">VALUE_YES</option>
+			</param>
+	
+			<param name="min_width" type="text" default="10" label="LABEL_MIN_WIDTH" description="DESC_MIN_WIDTH" />
+			<param name="max_width" type="text" default="30" label="LABEL_MAX_WIDTH" description="DESC_MAX_WIDTH" />
+			<param name="extra_width" type="text" default="0" label="LABEL_EXTRA_WIDTH" description="DESC_EXTRA_WIDTH" />
+	
+	
+		<param name="@spacer_space" type="spacer" default=" " label="" description="" />
+		<param name="@spacer_bgifram" type="spacer" default="&lt;b&gt; IE6 FIX - FORM SELECT ELEMENT&lt;/b&gt;" label="" description="" />
+		<param name="@spacer_line" type="spacer" default="" label="" description="" />
+	
+			<param name="useBgIframe" type="radio" default="0" label="LABEL_USEBGIFRAME" description="DESC_USEBGIFRAME">
+				<option value="0">VALUE_NO</option>
+				<option value="1">VALUE_YES</option>
+			</param>
+	
+			<param name="bgi_top" type="text" default="auto" label="LABEL_BGI_TOP" description="DESC_BGI_TOP" />
+			<param name="bgi_left" type="text" default="auto" label="LABEL_BGI_LEFT" description="DESC_BGI_LEFT" />
+			<param name="bgi_width" type="text" default="auto" label="LABEL_BGI_WIDTH" description="DESC_BGI_WIDTH" />
+			<param name="bgi_height" type="text" default="auto" label="LABEL_BGI_HEIGHT" description="DESC_BGI_HEIGHT" />
+			<param name="bgi_opacity" type="radio" default="1" label="LABEL_BGI_OPACITY" description="DESC_BGI_OPACITY">
+				<option value="0">VALUE_NO</option>
+				<option value="1">VALUE_YES</option>
+			</param>
+			<param name="bgi_src" type="text" default="javascript:false;" size="50" label="LABEL_BGI_SOURCE" description="DESC_BGI_SOURCE" />
+	
+
+		<param name="@spacer_space" type="spacer" default=" " label="" description="" />
+		<param name="@spacer_events" type="spacer" default="&lt;b&gt; EVENTS &lt;/b&gt;" label="" description="" />
+		<param name="@spacer_line" type="spacer" default="" label="" description="" />
+	
+			<param name="onInit" type="text" default="" size="50" label="onInit" description="DESC_ONINIT" />
+			<param name="onBeforeShow" type="text" default="" size="50" label="onBeforeShow" description="DESC_ONBEFORESHOW" />
+			<param name="onShow" type="text" default="" size="50" label="onShow" description="DESC_ONSHOW" />
+			<param name="onHide" type="text" default="" size="50" label="onHide" description="DESC_ONHIDE" />
+	
+
+		<param name="@spacer_space" type="spacer" default=" " label="" description="" />
+		<param name="@spacer_jquery" type="spacer" default="&lt;b&gt; JQUERY &lt;/b&gt;" label="" description="" />
+		<param name="@spacer_line" type="spacer" default="" label="" description="" />
+
+			<param name="loadJQuery" type="radio" default="1" label="LABEL_LOADJQUERY" description="DESC_LOADJQUERY">
+				<option value="1">VALUE_YES</option>
+				<option value="0">VALUE_NO</option>
+			</param>
+
+			<param name="@spacer_load_jquery" type="spacer" default="jQuery is required by this module.  The only reason not to load it is if it has already been loaded manually or by another module." label="" description="" />
+
+			<param name="jquerySafeMode" type="radio" default="1" label="LABEL_JQUERYSAFEMODE" description="DESC_JQUERYSAFEMODE">
+				<option value="1">VALUE_YES</option>
+				<option value="0">VALUE_NO</option>
+			</param>
+	
+			<param name="@spacer_load_jquery" type="spacer" default="jQuery is known to conflict with other javascript libraries like mootools.  No conflict mode helps to resolve these issues and is recommended." label="" description="" />
+
+
+		<param name="@spacer_space" type="spacer" default=" " label="" description="" />
+	
+	</params>
+
+
+	<params group="advanced">
+		<param name="show_whitespace" type="list" default="0" label="LABEL_SHOW_WHITESPACE" description="DESC_SHOW_WHITESPACE">
+			<option value="0">VALUE_NO</option>
+			<option value="1">VALUE_YES</option>
+		</param>
+
+
+	<param name="@spacer_line" type="spacer" default="" label="" description="" />
+
+
+		<param name="cache" type="list" default="1" label="LABEL_CACHING" description="DESC_CACHING">
+			<option value="1">VALUE_CACHING_YES</option>
+			<option value="0">VALUE_CACHING_NO</option>
+		</param>
+
+
+	<param name="@spacer_line" type="spacer" default="" label="" description="" />
+
+
+		<param name="tag_id" type="text" default="" label="Menu Tag ID" description="PARAMMENUTAGID" />
+		<param name="class_sfx" type="text" default="" label="Menu Class Suffix" description="PARAMMENUCLASSSUFFIX" />
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="maxdepth" type="text" default="10" label="Maximum Menu Depth" description="PARAMMENUMAXDEPTH" />
+		<param name="startLevel" type="text" default="0" size="5" label="LABEL_STARTLEVEL" description="DESC_STARTLEVEL" />
+		<param name="endLevel" type="text" default="0" size="5" label="LABEL_ENDLEVEL" description="DESC_ENDLEVEL" />
+		<param name="window_open" type="text" default="" size="50" label="LABEL_WINDOW_OPEN" description="DESC_WINDOW_OPEN" />
+
+	</params>
+	
+	
+	<params group="other">
+		<param name="menu_images" type="radio" default="0" label="Show Menu Icons" description="PARAMSHOWMENUICONS">
+			<option value="0">VALUE_NO</option>
+			<option value="1">VALUE_YES</option>
+		</param>
+		<param name="menu_images_align" type="radio" default="0" label="Menu Icon Alignment" description="Alignment of the Menu Icons">
+			<option value="0">Left</option>
+			<option value="1">Right</option>
+		</param>
+		 <param name="menu_images_link" type="radio" default="0" label="Menu Icon Link" description="PARAMMENUICONLINK">
+			<option value="0">VALUE_NO</option>
+			<option value="1">VALUE_YES</option>
+		  </param>
+		<param name="expand_menu" type="radio" default="0" label="Expand Menu" description="PARAMEXPANDMENU">
+			<option value="0">VALUE_NO</option>
+			<option value="1">VALUE_YES</option>
+		</param>
+		<param name="activate_parent" type="radio" default="0" label="Activate parent" description="PARAMACTIVATEPARENT">
+			<option value="0">VALUE_NO</option>
+			<option value="1">VALUE_YES</option>
+		</param>
+		<param name="full_active_id" type="radio" default="0" label="Full Active highlighting" description="PARAMFULLACTIVEHIGHLIGHTING">
+			<option value="0">VALUE_NO</option>
+			<option value="1">VALUE_YES</option>
+		</param>
+
+
+	<param name="@spacer_line" type="spacer" default="" label="" description="" />
+
+
+		<param name="indent_image" type="list" default="0" label="Indent Image" description="Choose which indent image system to utilise">
+			<option value="0">Template</option>
+			<option value="1">Joomla! default images</option>
+			<option value="2">Use params below</option>
+			<option value="3">None</option>
+		</param>
+		<param name="indent_image1" type="imagelist" directory="/images/M_images" default="" label="Indent Image 1" description="Image for the first sub-level" />
+		<param name="indent_image2" type="imagelist" directory="/images/M_images" default="" label="Indent Image 2" description="Image for the second sub-level" />
+		<param name="indent_image3" type="imagelist" directory="/images/M_images" default="" label="Indent Image 3" description="Image for the third sub-level" />
+		<param name="indent_image4" type="imagelist" directory="/images/M_images" default="" label="Indent Image 4" description="Image for the fourth sub-level" />
+		<param name="indent_image5" type="imagelist" directory="/images/M_images" default="" label="Indent Image 5" description="Image for the fifth sub-level" />
+		<param name="indent_image6" type="imagelist" directory="/images/M_images" default="" label="Indent Image 6" description="Image for the sixth sub-level" />
+
+
+	<param name="@spacer_line" type="spacer" default="" label="" description="" />
+
+
+		<param name="spacer" type="text" default="" size="5" label="Spacer" description="Spacer for Horizontal menu" />
+		<param name="end_spacer" type="text" default="" size="5" label="End Spacer" description="End Spacer for Horizontal menu" />
+	</params>
+</install>

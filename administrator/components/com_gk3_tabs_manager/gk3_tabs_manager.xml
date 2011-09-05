@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+    
+	<name>gk3_tabs_manager</name>
+	<author>Gavick.com</author>
+	<creationDate>22/04/2010</creationDate>	
+	<copyright>Copyright by Gavick.com</copyright>
+	<authorEmail>info@gavick.com</authorEmail>
+	<authorUrl>http://www.gavick.com</authorUrl>
+	<version>3.1.2</version>	
+	
+	<description>Tabs Manager GK3</description>
+		   
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	
+	<installfile>install.php</installfile>
+	<uninstallfile>uninstall.php</uninstallfile>
+	
+	<administration>
+	
+		<menu img="components/com_gk3_tabs_manager/interface/images/com_logo_gk3.png">Gavick Tabs Manager GK3</menu>
+		
+		<languages>
+   			<language tag="en-GB">language/en-GB.com_gk3_tabs_manager.ini</language>
+		</languages>
+		
+		<files>
+			<filename>install.mysql.utf8.sql</filename>
+			<filename>uninstall.mysql.utf8.sql</filename>
+			<filename>admin.gk3_tabs_manager.php</filename>
+			<filename>toolbar.gk3_tabs_manager.php</filename>
+			<filename>install.php</filename>
+			<filename>uninstall.php</filename>
+			<filename>index.html</filename>
+			<folder>views/</folder>
+			<folder>models/</folder>
+			<folder>controllers/</folder>
+            <folder>interface/</folder>    
+		</files>
+		
+	</administration>
+	
+</install>

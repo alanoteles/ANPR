@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Global News</name>
+	<author>Jesus Vargas</author>
+	<creationDate>April 2008</creationDate>
+	<copyright>(C) 2005 - 2007 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>jesus@vargas.co.cr</authorEmail>
+	<authorUrl>joomla.vargas.co.cr</authorUrl>
+	<version>2.1.6</version>
+	<description>Groups your news by sections or by categories</description>
+	<files>
+		<filename module="mod_globalnews">mod_globalnews.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/browser.php</filename>
+		<filename>tmpl/list.php</filename>
+		<filename>tmpl/scroller.php</filename>
+		<filename>tmpl/slider.php</filename>
+		<filename>tmpl/static.php</filename>
+		<filename>tmpl/index.html</filename>
+		<filename>scripts/index.html</filename>
+		<filename>scripts/browser.js</filename>
+		<filename>scripts/scroller.js</filename>
+		<filename>scripts/slider.js</filename>
+	</files>
+	<params>
+		<param name="global" type="radio" default="s" label="Group by" description="Choose how to group the lists">
+			<option value="s">Section</option>
+			<option value="c">Category</option>
+		</param>
+		<param name="layout" type="list" default="0" label="Article List Layout" description="Choose an Article List Layout">
+			<option value="list">Plain List</option>
+			<option value="static">Static Content</option>
+			<option value="slider">Content Slider</option>
+			<option value="browser">Content Browser</option>
+			<option value="scroller">Content Scroller</option>
+	  	</param>
+		<param name="cols" type="text" default="1" label="Columns" description="Number of columns" />
+		<param name="margin" type="text" default="2px" label="Margin" description="Margin between Groups" />
+		<param name="cat_order" type="list" default="1" label="Cat/Sec Order" description="Categories/Sections ordering options">
+			<option value="1">By ID</option>
+			<option value="2">By Title</option>
+			<option value="3">By Default</option>
+			<option value="0">Random</option>
+	  	</param>
+		<param name="cat_limit" type="text" default="" label="Cat/Sec Limit" description="Limit the number of Categories/Sections to enable, or leave blank for no limit" />
+		<param name="empty" type="radio" default="0" label="Empty Cat/Sec" description="Hide/Show empty Category/Section">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="filter" type="radio" default="0" label="Filter by Section?" description="Choose whether to filter groups by the current section">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="curcat" type="radio" default="0" label="Current Cat/Sec" description="If you are viewing a particular Category/Section">
+			<option value="0">Clickable</option>
+			<option value="1">Non Clickable</option>
+		</param>
+		<param name="catids" type="text" default="" label="Show Category ID(s)" description="By coma separated Category Ids to be listed, or leave blank to include all" />
+		<param name="secids" type="text" default="" label="Show Section ID(s)" description="By coma separated Section Ids to be listed, or leave blank to include all" />
+		<param name="catexc" type="text" default="" label="Exclude Category ID(s)" description="By coma separated Category Ids to be excluded, or leave blank to include all" />
+		<param name="secexc" type="text" default="" label="Exclude Section ID(s)" description="By coma separated Section Ids to be excluded, or leave blank to include all" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="show_cat" type="list" default="1" label="Cat/Sec Header" description="Show/Hide Category/Section name">
+			<option value="0">Hide</option>
+			<option value="1">Show Clickable</option>
+			<option value="2">Show Non Clickable</option>
+		</param>
+		<param name="cat_title" type="list" default="1" label="Cat/Sec Title" description="Category/Section Title">
+			<option value="0">Hide</option>
+			<option value="1">Normal</option>
+			<option value="2">Strong</option>
+			<option value="3">Underline</option>
+			<option value="4">Strong Underline</option>
+			<option value="5">Heading 1</option>
+			<option value="6">Heading 2</option>
+			<option value="7">Heading 3</option>
+			<option value="8">Heading 4</option>
+			<option value="9">Heading 5</option>
+			<option value="10">Heading 6</option>
+		</param>
+		<param name="cat_img_align" type="list" default="0" label="Cat/Sec Image" description="Categories/Sections Images">
+			<option value="0">Hide</option>
+			<option value="left">Float Left</option>
+			<option value="right">Float Right</option>
+			<option value="center">Center</option>
+		</param>
+		<param name="cat_img_width" type="text" default="" label="Cat/Sec Image Width" description="Cat/Sec Image Width (px), or leave blank for a proportional width" />
+		<param name="cat_img_height" type="text" default="" label="Cat/Sec Image Height" description="Cat/Sec Image Height (px), or leave blank for a proportional height" />
+		<param name="cat_img_margin" type="text" default="3px" label="Cat/Sec Image Margin" description="Cat/Sec Image Margin" />
+		<param name="cat_img_border" type="text" default="0" label="Cat/Sec Image Border" description="Cat/Sec Image Border" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="count" type="text" default="5" label="Count Articles" description="The number of items to display for each Section/Category (default 5)" />
+		<param name="ordering" type="list" default="c_dsc" label="Article Ordering" description="Article ordering options">
+			<option value="c_dsc">Recently Added</option>
+			<option value="m_dsc">Recently Modified</option>
+			<option value="alpha">Alphabetical</option>
+			<option value="ralpha">Reverse-Alphabetical</option>
+			<option value="h_dsc">Most Hits</option>
+			<option value="h_asc">Less Hits</option>
+			<option value="random">Random</option>
+			<option value="rating">Top Rated</option>
+			<option value="order">Order</option>
+	  	</param>
+		<param name="limittitle" type="text" default="" label="Title Chars Limit" description="Article's Title Characters Limit" />
+		<param name="show_front" type="list" default="0" label="Frontpage Items" description="PARAMFRONTPAGEITEMS">
+			<option value="0">Show</option>
+			<option value="1">Hide</option>
+			<option value="2">Only</option>
+		</param>
+		<param name="user_id" type="list" default="0" label="Authors" description="A filter for the authors">
+			<option value="0">Anyone</option>
+			<option value="by_me">Added or modified by me</option>
+			<option value="not_me">Not added or modified by me</option>
+	  	</param>
+		<param name="current" type="list" default="1" label="Current Article in List" description="If you are looking at an article that happens to be on the list">
+			<option value="0">Hide</option>
+			<option value="1">Show Clickable</option>
+			<option value="2">Show non Clickable</option>
+		</param>
+		<param name="more" type="radio" default="0" label="MORE ARTICLES link" description="Show/Hide MORE ARTICLES link">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="width" type="text" default="auto" label="Width" description="If not auto, specify px, em or %" />
+		<param name="border" type="text" default="1px solid #EFEFEF" label="Border" description="Border (1px solid #EFEFEF)" />
+		<param name="header_color" type="text" default="#EFEFEF" label="Header Bgcolor" description="Header Background Color" />
+		<param name="header_padding" type="text" default="5px" label="Header Padding" description="Cat/Sec Header Padding" />
+		<param name="height" type="text" default="100px" label="Content Area Height" description="Specify px, em or %" />
+		<param name="color" type="text" default="#FFFFFF" label="Content Area Bgcolor" description="Content Area Background Color" />
+		<param name="padding" type="text" default="5px" label="Content Area Padding" description="Padding" />
+		<param name="delay" type="text" default="3000" label="Scroller/Slider Delay" description="Scroller/Slide Delay (ms)" />
+		<param name="next" type="radio" default="0" label="Slider NEXT link" description="Show/Hide NEXT link in slider pagination" >
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="html" type="textarea" cols="38" rows="7" default="GN_image GN_title GN_break GN_date GN_break GN_text GN_readmore" label="HTML Supported Code for Content Layouts. FEATURED ELEMENTS: GN_image, GN_title, GN_text, GN_author, GN_date, GN_readmore, GN_comments, GN_break, GN_space" description="Insert any HTML code between the default elements" />
+		<param name="limittext" type="text" default="150" label="Text Chars Limit" description="Article's Text Characters Limit (0 means no limit)" />
+		<param name="text" type="list" default="0" label="Select Text From" description="Select Text From">
+			<option value="0">Introtext</option>
+			<option value="1">Intro and Fulltext</option>
+			<option value="2">Fulltext Only</option>			
+		</param>
+		<param name="striptext" type="radio" default="1" label="Stip Tags?" description="Strip HTML tags from your Articles intro (full) text (Selecting No could cause an HTML mess-up)">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="allowedtags" type="text" default="" label="Allowed Tags" description="If you choose to Strip Tags, you can write here down those tags you would like to keep" />
+		<param name="date_format" type="text" default="" label="Date Format" description="Optional format for strftime, or leave blank for a formated date according to current local" />
+		<param name="date" type="radio" default="created" label="Selected Date" description="Selected Date">
+			<option value="created">Created</option>
+			<option value="modified">Modified</option>
+		</param>
+		<param name="item_img_align" type="list" default="left" label="Article Image Align" description="Left/Right">
+			<option value="left">Left</option>
+			<option value="right">Right</option>
+			<option value="center">Center</option>
+		</param>
+		<param name="item_img_width" type="text" default="" label="Article Image Width" description="Article Image Width (px), or leave blank for a proportional width" />
+		<param name="item_img_height" type="text" default="" label="Article Image Height" description="Article Image Height (px), or leave blank for a proportional height" />
+		<param name="item_img_margin" type="text" default="3px" label="Article Image Margin" description="Article Image Margin" />
+		<param name="item_img_border" type="text" default="0" label="Article Image Border" description="Article Image Border" />
+		<param name="author" type="list" default="username" label="Author" description="Author">
+			<option value="username">Username</option>
+			<option value="name">Name</option>
+			<option value="alias">Alias</option>
+		</param>
+		<param name="cb_link" type="radio" default="0" label="Link Author to CB" description="Link Author to Community Builder">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="comments_table" type="text" default="#__comment" label="Comments DB Table" description="Comments DB Table" />
+		<param name="article_column" type="text" default="contentid" label="Article DB Column" description="Article Column in Comments DB Table" />
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+			<option value="0">No caching</option>
+			<option value="1">Use global</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	</params>
+</install>

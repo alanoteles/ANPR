@@ -1,0 +1,14 @@
+div#news{
+	width: 760px;
+}
+
+div#news h2{}
+
+div#news p small{}
+
+div#news img{
+	float: left;
+	border: 1px solid #eaeaea;
+	padding: 1px;
+	margin: 2px 24px 5px 0;
+}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Twitter Feed</name>
+	<author>GammaBlue</author>
+	<creationDate>March 2009</creationDate>
+	<copyright>Copyright (C) 2009 GammaBlue. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.gammablue.com</authorUrl>
+	<version>1.0.0a</version>
+	<description>&lt;h1&gt;Twitter Feed&lt;/h1&gt;  &lt;h3&gt; &lt;a href=&quot;http://gammablue.com&quot;&gt;GammaBlue Development&lt;/a&gt;&lt;/h3&gt; &lt;img src=&quot;http://gammablue.com/images/stories/TwitterFeedBlueBG2.png&quot;&gt; &lt;h2&gt;Thank you for installing Twitter Feed!&lt;/h2&gt;  &lt;p&gt;Twitter Feed is a simple module that displays a configurable number of updates (Tweets) based on either the basic Twitter API or a configurable RSS feed, which can be used in conjunction with the Twitter Search capabilities to add or remove terms.  In the advanced RSS mode, Tweet updates are rendered is CSS-friendly DIV tags and can be easily styled to fit the look and feel of your website.&lt;/p&gt;</description>
+	<files>
+		<filename module="mod_twitterfeed">mod_twitterfeed.php</filename>
+		<filename module="mod_twitterfeed">helper.php</filename>
+		<filename module="mod_twitterfeed">tmpl/default.php</filename>
+	</files>
+	<params>
+	
+  <!--
+  	<param name="twitterfeedtype" type="radio" default="1" label="Feed Type" description="Type of Twitter feed to display.  User Timeline provides the basic Twitter view, with bulleted list and last update timestamp.  The Advanced search feed allows you to use the Twitter Search API, using the parameters below the sperator line, to filter your results and reder the results with custom CSS styles.">
+			<option value="1">User Timeline (basic)</option>
+			<option value="0">Advanced (options below)</option>
+		</param>
+   -->
+
+		<param name="twitteruser" type="text" default="" label="Twitter User" description="The username of the Twitter feed to display" />
+		<param name="twitteritems" type="text" default="5" label="Tweets" description="The number of items (Tweets) to display" />
+    
+    <param name="twitterfeeditemlink" type="radio" default="1" label="Link to Tweets" description="Link to Twitter on each Tweet item.  The link will display using the Title of Twitter Feed provided above.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="twitterfeedtitle" type="text" default="" label="Link Text" description="This will be displayed on the links if Link to Tweets is enabled.  If left blank, your username will be used." />
+    
+    		
+		<param name="@spacer" type="spacer" default="" label="RSS Feed Config" description="The items below are only used if RSS feed item is selected above." />
+
+    <param name="allthese" type="text" size="30" default="" label="All these words" description="Enter words that you want to search for.  Seperate values with a space." />
+    <param name="exactphrase" type="text" size="30" default="" label="This exact phrase" description="Enter an exact phrase that you want to display from your Twitter feed.  Only one exact value may be entered." />
+    <param name="anyofthese" type="text" size="30" default="" label="Any of these words" description="If any of these words appear in the Tweet update, the item will be displayed.  Seperate values with a space." />
+    <param name="noneofthese" type="text" size="30" default="" label="None of these words" description="If any of these words appear in the Tweet update, the item will be removed from the result set.  Seperate values with a space." />
+    <param name="thishashtag" type="text" size="30" default="" label="These Hashtags" description="Only display Tweets with these Hashtags.  Enter values without the hash sign (#).  Seperate values with a space." />
+    
+    
+    <param name="onlylinks" type="radio" default="0" label="Only Links" description="Only display Tweet updates with links.">
+      <option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+       
+    
+    <!--
+    <param name="rssurl" type="text" size="50" default="" label="Feed URL" description="Enter the URL of the RSS/RDF feed" />
+		-->
+		<param name="followmetext" type="text" size="30" default="Follow me on Twitter" label="Follow Me Text" description="Enter the text that you want to be displayed in the Follow Me on Twitter link to your Twitter page." />
+    <param name="word_count" type="text" size="6" default="0" label="Word Count" description="PARAMWORDCOUNT" />		
+		
+		<!--
+		<param name="rssdesc" type="radio" default="0" label="RSS Feed Description" description="Show the description text for the whole Feed">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="rssimage" type="radio" default="0" label="RSS Feed Image" description="Show the image associated with the whole Feed">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		-->
+			
+		<param name="rsstitle" type="radio" default="0" label="Display Query Link" description="Display the constructed Query.  Useful mainly for debugging purposes.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+    <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+    
+		
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="15" label="Cache Time" description="The time in seconds before the module is re-cached." />
+	</params>
+</install>

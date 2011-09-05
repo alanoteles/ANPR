@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://dev.joomla.org/xml/1.5/template-install.dtd">
+<install version="1.5" type="template">
+	<name>theme670</name>
+	<creationDate>25 february 2011</creationDate>
+	<author>Mercury</author>
+	<authorEmail>info@template-help.com</authorEmail>
+	<authorUrl>http://www.template-help.com</authorUrl>
+	<copyright>Copyright  2003-2009 template-help.com. All Rights Reserved.</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.0</version>
+	<description>this template for Joomla 1.5 is made by template-help.com</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>component.php</filename>
+		<filename>PIE.php</filename>
+		<filename>PIE.htc</filename>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>scripts</folder>
+		<folder>stories</folder>
+	</files>
+	<positions>
+		<position>left</position>
+		<position>right</position>
+		<position>top</position>
+		<position>banner</position>
+		<position>breadcrumb</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>user5</position>
+		<position>user6</position>
+		<position>user7</position>
+		<position>user8</position>
+		<position>debug</position>
+		<position>tab1</position>
+		<position>tab2</position>
+		<position>tab3</position>
+		<position>syndicate</position>
+		<position>footer</position>
+	</positions>
+	<params>
+	</params>
+</install>

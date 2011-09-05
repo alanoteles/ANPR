@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>YouTube Feed 2.0</name>
+	<author>Caleb Nance</author>
+	<creationDate>November 2010</creationDate>
+	<copyright>http://www.CalebNance.com</copyright>
+	<license></license>
+	<authorEmail>CalebNance@GMail.com</authorEmail>
+	<authorUrl>http://www.CalebNance.com</authorUrl>
+	<version>2.0</version>
+	<description>This module allows the displaying of the YouTube Rss Feeds, list of the availiable feeds inside the module. Bugs found please go to the contact me section of my site and tell me about them,(http://www.calebnance.com/index.php/contact-us/Caleb.html) and if you also have any questions or need help you can ask me there as well. Hope you enjoy! Have a great day. For Date Format Help go here -> http://php.net/manual/en/function.date.php.. For Hex Color Help go here -> http://www.december.com/html/spec/colorhex.html</description>
+	<files>
+		<filename module="mod_cn_youtubefeed">mod_cn_youtubefeed.php</filename>
+		<filename>mod_cn_youtubefeed.xml</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>assets/mod_cn_youtubefeed.css</filename>
+		<filename>assets/carousel.css</filename>
+		<filename>assets/carousel.js</filename>
+		<filename>assets/lightbox.js</filename>
+		<filename>assets/lightbox.css</filename>
+		<filename>assets/javascript.js</filename>
+		<filename>assets/index.html</filename>
+		<filename>tmpl/carousel.php</filename>
+        <filename>tmpl/default.php</filename>
+		<filename>tmpl/search.php</filename>
+        <filename>tmpl/index.html</filename>
+		<filename>images/back_btn.png</filename>
+		<filename>images/play_btn.png</filename>
+		<filename>images/forward_btn.png</filename>
+		<filename>images/pause_btn.png</filename>
+		<filename>images/previous.png</filename>
+		<filename>images/play.png</filename>
+		<filename>images/next.png</filename>
+		<filename>images/pause.png</filename>
+		<filename>images/close.png</filename>
+		<filename>images/loading.gif</filename>
+		<filename>images/mag_glass.png</filename>
+	</files>
+	<params>
+		<param name="mod_use" type="list" default="default" label="What Kind of Feed" description="Select which feed you want to show on the frontend. If YouTube Feed is selected, then it will show what is selected on the next param. If Search YouTube is selected then it will take the box labeled 'Keyword' and display that as a search of YouTube videos. If the Show User is selected, it will take the box labeled, 'YouTube User' and display only their videos!!.">
+			<option value="default">YouTube Feed</option>
+			<option value="search">Search YouTube</option>
+		</param>
+		<param name="modalColor" type="text" default="000000" label="Shadowbox Background Color" description="Set this for the modal background color, shadowbox effect. (ex. 000000 = Black or FF0000 = Red)" />
+		<param name="modalOpacity" type="list" default="0.50" label="Color Overlay Opacity" description="Set this for the modal background color opacity" >
+			<option value="0.25">Light Color</option>
+			<option value="0.50">Half Color</option>
+			<option value="0.75">Heavy Color</option>
+			<option value="1.00">Full Color</option>
+		</param>
+		<param name="@spacer1" type="spacer" default="" label="" description="" />
+		<param name="rssurl" type="list" default="most_popular?client=ytapi-youtube-browse&amp;alt=rss&amp;time=today" label="Select YouTube Feed" description="Display YouTube feed here">
+			<option value="most_popular?client=ytapi-youtube-browse&amp;alt=rss&amp;time=today">Most Popular Today</option>
+			<option value="most_popular?client=ytapi-youtube-browse&amp;alt=rss&amp;time=this_week">Most Popular This Week</option>
+			<option value="most_popular?client=ytapi-youtube-browse&amp;alt=rss&amp;time=this_month">Most Popular This Month</option>
+			<option value="most_viewed?client=ytapi-youtube-browse&amp;alt=rss&amp;time=today">Most Viewed Today</option>
+			<option value="most_viewed?client=ytapi-youtube-browse&amp;alt=rss&amp;time=this_week">Most Viewed This Week</option>
+			<option value="most_viewed?client=ytapi-youtube-browse&amp;alt=rss&amp;time=this_month">Most Viewed This Month</option>
+			<option value="most_viewed?client=ytapi-youtube-browse&amp;alt=rss">Most Viewed of All Time</option>
+		</param>
+		<param name="view" type="list" default="carousel" label="Layout View" description="Select which view you want it to be layed out as.">
+			<option value="default">List</option>
+			<option value="carousel">Slideshow</option>
+		</param>
+		<param name="@spacer2" type="spacer" default="" label="" description="" />
+		<param name="search" type="text" default="calebcanhelp22" label="Keyword" description="Searches YouTube for this keyword." />
+		<param name="search_start" type="text" default="1" label="Search Start" description="For example, if using the default 1, the following URL requests all videos related to the query starting with the 1st search result." />
+		<param name="@spacer10" type="spacer" default="Limit start cannot be 0" label="" description="" />
+		<param name="search_limit" type="text" default="5" label="Search Limit" description="Returns the number that is in this box. LIMIT IS SET TO 25" />
+		<param name="@spacer10" type="spacer" default="Limit end will only work if there is this many searched items found with the keyword." label="" description="" />
+		<param name="showtags" type="radio" default="1" label="Show Tags" description="Select whether you would like the tags of the video to be shown.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="@spacer3" type="spacer" default="" label="" description="" /> 
+		<param name="videolimit" type="text" default="10" label="Video Display Limit" description="This is to set the videos displayed, showing most recent first, or most popular first, then shows down to whatever number is there. There is a limit of max to be 20. 0 will = all" />
+		<param name="@spacer4" type="spacer" default="" label="" description="" />
+		<param name="charlimit" type="text" default="30" label="Title Character Limit" description="This is to set the preview description to a limit, follow by ... so that they can read the whole description once they click on the video, and also so that it doesn't take up a lot of space for the module." />
+		<param name="imgshow" type="radio" default="1" label="Show Image" description="Select whether you would like the image to be shown with the video list.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="showviews" type="radio" default="1" label="Show Views" description="Select whether you would like the views of the video to be shown.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="showtime" type="radio" default="1" label="Show Time" description="Select whether you would like the time of the video to be shown.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="showuser" type="radio" default="1" label="Show User" description="Select whether you would like the publisher of the video to be shown.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="timepub" type="radio" default="1" label="Show Published Date" description="Select whether you would like the date published to be shown.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="timesetup" type="text" default="D d, Y h:i a" label="Time Display" description="This is to set the set up of how the time should be displayed, to change, google php time and you will get a list of the letters that you can use. HELP IN DESCRIPTION TO THE LEFT" />
+		<param name="@spacer5" type="spacer" default="" label="" description="" />
+		<param name="modwidth" type="text" default="200" label="Module Width (px)" description="Set this param to the width of the module." />
+		<param name="modheight" type="text" default="200" label="Module Height (px)" description="Set this param to the height of the module." />
+		<param name="@spacer6" type="spacer" default="" label="" description="" />
+		<param name="imgslideshow" type="list" default="none" label="Use Image for Hover" description="Select whether or not to use the image, if not, uses the CSS options below.">
+			<option value="none">None</option>
+			<option value="mag_glass.png">Magnifying Glass</option>
+		</param>
+		<param name="navlinkcolor" type="text" default="000000" label="Link Color of Nav Bar" description="Set this param to the hex color of the nav.(ex. 000 = Black, FFF = White) HELP IN DESCRIPTION TO THE LEFT" />
+		<param name="bordercolor" type="text" default="999999" label="Border Color of Displayed Video" description="Set this param to the hex color of the selected slide.(ex. 000 = Black, FFF = White) HELP IN DESCRIPTION TO THE LEFT" />
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="15" label="Cache Time" description="The time in minutes before the module is re-cached." />
+	</params>
+</install>

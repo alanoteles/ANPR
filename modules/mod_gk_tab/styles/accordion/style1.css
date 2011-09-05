@@ -1,0 +1,29 @@
+div.gk_tab-style1{}
+
+div.gk_tab-style1 h3{
+	background: url('../../images/accordion/style1/h3.png') repeat-x 0 0;
+	color: #fff;
+	line-height: 43px;
+	margin: 0;
+	padding: 0;
+	height: 43px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+div.gk_tab-style1 h3:hover,
+div.gk_tab-style1 h3.active{
+	background: url('../../images/accordion/style1/h3_hover.png') repeat-x 0 0;
+}
+
+div.gk_tab-style1 h3 span{
+	padding: 0 10px;
+	margin: 0;
+}
+
+div.gk_tab-style1 div.gk_tab_item_space{
+	padding: 10px;
+	overflow: hidden;
+}
+
+div.gk_tab-style1 div.gk_tab_container-style1{}

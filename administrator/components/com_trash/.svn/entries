@@ -1,0 +1,70 @@
+10
+
+dir
+0
+http://alano@192.168.0.106/svn/anpr/administrator/components/com_trash
+http://alano@192.168.0.106/svn/anpr
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dca0dac9-5aa0-49d5-acc5-cec72a762977
+
+trash.xml
+file
+
+
+
+add
+
+admin.trash.html.php
+file
+
+
+
+add
+
+toolbar.trash.php
+file
+
+
+
+add
+
+index.html
+file
+
+
+
+add
+
+toolbar.trash.html.php
+file
+
+
+
+add
+
+admin.trash.php
+file
+
+
+
+add
+

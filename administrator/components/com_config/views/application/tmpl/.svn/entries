@@ -1,0 +1,133 @@
+10
+
+dir
+0
+http://alano@192.168.0.106/svn/anpr/administrator/components/com_config/views/application/tmpl
+http://alano@192.168.0.106/svn/anpr
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dca0dac9-5aa0-49d5-acc5-cec72a762977
+
+ftp.php
+file
+
+
+
+add
+
+config_site.php
+file
+
+
+
+add
+
+config_database.php
+file
+
+
+
+add
+
+config_server.php
+file
+
+
+
+add
+
+navigation.php
+file
+
+
+
+add
+
+config_metadata.php
+file
+
+
+
+add
+
+config_mail.php
+file
+
+
+
+add
+
+config_session.php
+file
+
+
+
+add
+
+config_system.php
+file
+
+
+
+add
+
+config_seo.php
+file
+
+
+
+add
+
+config_debug.php
+file
+
+
+
+add
+
+config_ftp.php
+file
+
+
+
+add
+
+index.html
+file
+
+
+
+add
+
+config_locale.php
+file
+
+
+
+add
+
+config_cache.php
+file
+
+
+
+add
+

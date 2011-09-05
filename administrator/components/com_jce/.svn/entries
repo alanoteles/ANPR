@@ -1,0 +1,161 @@
+10
+
+dir
+0
+http://alano@192.168.0.106/svn/anpr/administrator/components/com_jce
+http://alano@192.168.0.106/svn/anpr
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dca0dac9-5aa0-49d5-acc5-cec72a762977
+
+media
+dir
+
+
+
+add
+
+licence.txt
+file
+
+
+
+add
+
+controller
+dir
+
+
+
+add
+
+models
+dir
+
+
+
+add
+
+jce.php
+file
+
+
+
+add
+
+install.php
+file
+
+
+
+add
+
+classes
+dir
+
+
+
+add
+
+views
+dir
+
+
+
+add
+
+plugin
+dir
+
+
+
+add
+
+jce.xml
+file
+
+
+
+add
+
+access.xml
+file
+
+
+
+add
+
+helpers
+dir
+
+
+
+add
+
+adapters
+dir
+
+
+
+add
+
+config.xml
+file
+
+
+
+add
+
+includes
+dir
+
+
+
+add
+
+controller.php
+file
+
+
+
+add
+
+index.html
+file
+
+
+
+add
+
+tables
+dir
+
+
+
+add
+
+elements
+dir
+
+
+
+add
+

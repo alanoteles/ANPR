@@ -1,0 +1,27 @@
+#system-message dd ul {
+	border-bottom:3px solid #84A7DB;
+	border-top:3px solid #84A7DB;
+	color:#0055BB;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin-bottom:10px;
+	padding:10px;
+}
+
+#system-message dd {
+	font-weight:bold;
+	text-indent:30px;
+	margin: 0px !important;
+}
+
+#system-message dt.message {
+	display:none;
+}
+
+#system-message dd ul {
+	color:#0055BB;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+}

@@ -1,0 +1,728 @@
+10
+
+dir
+0
+http://alano@192.168.0.106/svn/anpr/administrator/language/en-GB
+http://alano@192.168.0.106/svn/anpr
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dca0dac9-5aa0-49d5-acc5-cec72a762977
+
+en-GB.plg_system_legacy.ini
+file
+
+
+
+add
+
+en-GB.com_user.ini
+file
+
+
+
+add
+
+en-GB.com_wrapper.ini
+file
+
+
+
+add
+
+en-GB.plg_search_sections.ini
+file
+
+
+
+add
+
+en-GB.com_weblinks.menu.ini
+file
+
+
+
+add
+
+en-GB.com_plugins.ini
+file
+
+
+
+add
+
+en-GB.com_newsfeeds.ini
+file
+
+
+
+add
+
+en-GB.mod_online.ini
+file
+
+
+
+add
+
+en-GB.com_categories.ini
+file
+
+
+
+add
+
+en-GB.plg_editors_xstandard.ini
+file
+
+
+
+add
+
+en-GB.plg_system_sef.ini
+file
+
+
+
+add
+
+en-GB.com_sections.ini
+file
+
+
+
+add
+
+en-GB.com_admin.ini
+file
+
+
+
+add
+
+en-GB.plg_editors-xtd_readmore.ini
+file
+
+
+
+add
+
+en-GB.com_contact.ini
+file
+
+
+
+add
+
+en-GB.com_installer.ini
+file
+
+
+
+add
+
+en-GB.plg_authentication_example.ini
+file
+
+
+
+add
+
+en-GB.com_templates.ini
+file
+
+
+
+add
+
+en-GB.plg_editors_jce.ini
+file
+
+
+
+add
+
+en-GB.mod_logged.ini
+file
+
+
+
+add
+
+en-GB.com_cpanel.ini
+file
+
+
+
+add
+
+en-GB.ini
+file
+
+
+
+add
+
+en-GB.tpl_khepri.ini
+file
+
+
+
+add
+
+en-GB.com_jce.menu.ini
+file
+
+
+
+add
+
+en-GB.plg_editors_tinymce.ini
+file
+
+
+
+add
+
+en-GB.com_massmail.ini
+file
+
+
+
+add
+
+en-GB.com_messages.ini
+file
+
+
+
+add
+
+en-GB.plg_search_contacts.ini
+file
+
+
+
+add
+
+en-GB.plg_xmlrpc_blogger.ini
+file
+
+
+
+add
+
+en-GB.plg_xmlrpc_joomla.ini
+file
+
+
+
+add
+
+en-GB.mod_custom.ini
+file
+
+
+
+add
+
+en-GB.plg_editors-xtd_pagebreak.ini
+file
+
+
+
+add
+
+en-GB.plg_editors-xtd_image.ini
+file
+
+
+
+add
+
+en-GB.plg_search_newsfeeds.ini
+file
+
+
+
+add
+
+en-GB.com_jce.sys.ini
+file
+
+
+
+add
+
+en-GB.mod_submenu.ini
+file
+
+
+
+add
+
+en-GB.com_media.ini
+file
+
+
+
+add
+
+en-GB.plg_content_pagebreak.ini
+file
+
+
+
+add
+
+en-GB.plg_content_image.ini
+file
+
+
+
+add
+
+en-GB.com_trash.ini
+file
+
+
+
+add
+
+en-GB.plg_user_joomla.ini
+file
+
+
+
+add
+
+en-GB.plg_authentication_joomla.ini
+file
+
+
+
+add
+
+en-GB.mod_status.ini
+file
+
+
+
+add
+
+en-GB.mod_quickicon.ini
+file
+
+
+
+add
+
+en-GB.plg_system_backlink.ini
+file
+
+
+
+add
+
+en-GB.com_banners.ini
+file
+
+
+
+add
+
+en-GB.com_menus.menu.ini
+file
+
+
+
+add
+
+en-GB.com_banners.menu.ini
+file
+
+
+
+add
+
+en-GB.plg_editors_none.ini
+file
+
+
+
+add
+
+en-GB.plg_system_debug.ini
+file
+
+
+
+add
+
+en-GB.mod_footer.ini
+file
+
+
+
+add
+
+en-GB.plg_content_emailcloak.ini
+file
+
+
+
+add
+
+en-GB.com_cache.ini
+file
+
+
+
+add
+
+en-GB.mod_menu.ini
+file
+
+
+
+add
+
+en-GB.plg_search_weblinks.ini
+file
+
+
+
+add
+
+en-GB.com_login.ini
+file
+
+
+
+add
+
+en-GB.plg_content_code.ini
+file
+
+
+
+add
+
+en-GB.com_poll.menu.ini
+file
+
+
+
+add
+
+en-GB.com_tag.ini
+file
+
+
+
+add
+
+en-GB.plg_editors_jce.sys.ini
+file
+
+
+
+add
+
+en-GB.plg_system_cache.ini
+file
+
+
+
+add
+
+en-GB.com_weblinks.ini
+file
+
+
+
+add
+
+en-GB.plg_search_categories.ini
+file
+
+
+
+add
+
+en-GB.plg_authentication_ldap.ini
+file
+
+
+
+add
+
+en-GB.mod_popular.ini
+file
+
+
+
+add
+
+en-GB.xml
+file
+
+
+
+add
+
+en-GB.com_frontpage.ini
+file
+
+
+
+add
+
+en-GB.com_gk3_tabs_manager.ini
+file
+
+
+
+add
+
+en-GB.com_menus.ini
+file
+
+
+
+add
+
+en-GB.tpl_ja_purity.ini
+file
+
+
+
+add
+
+en-GB.plg_authentication_gmail.ini
+file
+
+
+
+add
+
+en-GB.mod_latest.ini
+file
+
+
+
+add
+
+en-GB.plg_content_geshi.ini
+file
+
+
+
+add
+
+en-GB.mod_stats.ini
+file
+
+
+
+add
+
+en-GB.mod_toolbar.ini
+file
+
+
+
+add
+
+en-GB.plg_search_content.ini
+file
+
+
+
+add
+
+en-GB.mod_feed.ini
+file
+
+
+
+add
+
+en-GB.com_search.ini
+file
+
+
+
+add
+
+en-GB.com_languages.ini
+file
+
+
+
+add
+
+en-GB.tpl_beez.ini
+file
+
+
+
+add
+
+en-GB.mod_unread.ini
+file
+
+
+
+add
+
+en-GB.tpl_rhuk_milkyway.ini
+file
+
+
+
+add
+
+en-GB.plg_authentication_openid.ini
+file
+
+
+
+add
+
+en-GB.mod_title.ini
+file
+
+
+
+add
+
+en-GB.plg_content_loadmodule.ini
+file
+
+
+
+add
+
+en-GB.mod_components.ini
+file
+
+
+
+add
+
+en-GB.com_newsfeeds.menu.ini
+file
+
+
+
+add
+
+en-GB.plg_content_pagenavigation.ini
+file
+
+
+
+add
+
+en-GB.com_contact.menu.ini
+file
+
+
+
+add
+
+en-GB.com_users.ini
+file
+
+
+
+add
+
+en-GB.com_jce.ini
+file
+
+
+
+add
+
+en-GB.com_checkin.ini
+file
+
+
+
+add
+
+en-GB.com_config.ini
+file
+
+
+
+add
+
+en-GB.com_poll.ini
+file
+
+
+
+add
+
+index.html
+file
+
+
+
+add
+
+en-GB.com_search.menu.ini
+file
+
+
+
+add
+
+en-GB.com_modules.ini
+file
+
+
+
+add
+
+en-GB.mod_login.ini
+file
+
+
+
+add
+
+en-GB.com_content.ini
+file
+
+
+
+add
+
+en-GB.plg_content_vote.ini
+file
+
+
+
+add
+

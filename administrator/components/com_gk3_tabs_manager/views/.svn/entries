@@ -1,0 +1,98 @@
+10
+
+dir
+0
+http://alano@192.168.0.106/svn/anpr/administrator/components/com_gk3_tabs_manager/views
+http://alano@192.168.0.106/svn/anpr
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dca0dac9-5aa0-49d5-acc5-cec72a762977
+
+check.system.view.php
+file
+
+
+
+add
+
+mainpage.view.php
+file
+
+
+
+add
+
+tab.view.php
+file
+
+
+
+add
+
+option.view.php
+file
+
+
+
+add
+
+index.html
+file
+
+
+
+add
+
+info.view.php
+file
+
+
+
+add
+
+group.view.php
+file
+
+
+
+add
+
+tmpl
+dir
+
+
+
+add
+
+gavick.news.view.php
+file
+
+
+
+add
+
+navigation.view.php
+file
+
+
+
+add
+

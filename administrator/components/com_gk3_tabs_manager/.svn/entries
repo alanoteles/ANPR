@@ -1,0 +1,112 @@
+10
+
+dir
+0
+http://alano@192.168.0.106/svn/anpr/administrator/components/com_gk3_tabs_manager
+http://alano@192.168.0.106/svn/anpr
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dca0dac9-5aa0-49d5-acc5-cec72a762977
+
+uninstall.php
+file
+
+
+
+add
+
+interface
+dir
+
+
+
+add
+
+uninstall.mysql.utf8.sql
+file
+
+
+
+add
+
+models
+dir
+
+
+
+add
+
+admin.gk3_tabs_manager.php
+file
+
+
+
+add
+
+controllers
+dir
+
+
+
+add
+
+gk3_tabs_manager.xml
+file
+
+
+
+add
+
+index.html
+file
+
+
+
+add
+
+install.php
+file
+
+
+
+add
+
+install.mysql.utf8.sql
+file
+
+
+
+add
+
+views
+dir
+
+
+
+add
+
+toolbar.gk3_tabs_manager.php
+file
+
+
+
+add
+
